@@ -1,0 +1,17 @@
+img{
+    width: 100px;
+}
+
+.navbar {
+    position: absolute;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    box-sizing: border-box;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    -webkit-transition-duration: 300ms;
+    background-color: #ffffff;
+}
