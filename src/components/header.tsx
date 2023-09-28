@@ -21,8 +21,9 @@ export const Navbar = function () {
                     <a href="/" className="logo">
                         <Image
                             src={logo}
-                            alt="Picture of the author"
-                            sizes="100px"
+                            width={100}
+                            height={100}
+                            alt="Logo Bleu de Fer"
                         />
                     </a>
 
@@ -38,20 +39,25 @@ export const Navbar = function () {
                             <button type="submit">
                                 <Image
                                     src={search}
-                                    alt="Picture of the author"
+                                    width={50}
+                                    height={50}
+                                    alt="Logo recherche"
                                 />
                             </button>
                             <button type="submit">
                                 <Image
                                     src={panier}
-                                    alt="Picture of the author"
+                                    width={50}
+                                    height={50}
+                                    alt="Logo panier"
                                 />
                             </button>
                             <button type="submit">
                                 <Image
                                     src={user}
-                                    alt="Picture of the author"
-                                    sizes="width: 10px"
+                                    width={50}
+                                    height={50}
+                                    alt="Logo utilisateur"
                                 />
                             </button>
                         </div>
