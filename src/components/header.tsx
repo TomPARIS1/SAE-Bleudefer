@@ -27,10 +27,10 @@ export const Navbar = function () {
                         />
                     </a>
 
-                    <div className="nav_links">
-                        <a href="/" className="text-black">Accueil</a>
-                        <a href="/News" className="text-black">Boutique</a>
-                        <a href="/Contact" className="text-black">A propos</a>
+                    <div className="nav_links text-xl">
+                        <a href="/" className="text-black mr-5">ACCUEIL</a>
+                        <a href="/News" className="text-black mr-5">BOUTIQUE</a>
+                        <a href="/Contact" className="text-black">A PROPOS</a>
                     </div>
 
                     <form className="search-box" onSubmit={handleSearch}>
@@ -39,24 +39,26 @@ export const Navbar = function () {
                             <button type="submit">
                                 <Image
                                     src={search}
-                                    width={50}
-                                    height={50}
+                                    width={25}
+                                    height={25}
                                     alt="Logo recherche"
+                                    className="mr-2"
                                 />
                             </button>
                             <button type="submit">
                                 <Image
                                     src={panier}
-                                    width={50}
-                                    height={50}
+                                    width={25}
+                                    height={25}
                                     alt="Logo panier"
+                                    className="mr-2"
                                 />
                             </button>
                             <button type="submit">
                                 <Image
                                     src={user}
-                                    width={50}
-                                    height={50}
+                                    width={25}
+                                    height={25}
                                     alt="Logo utilisateur"
                                 />
                             </button>
