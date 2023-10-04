@@ -28,44 +28,44 @@ export const Navbar = function () {
                         />
                     </a>
 
-                    <div className="nav_links text-lg">
-                        <a href="/" className="text-black mr-5">ACCUEIL</a>
-                        <a href="/News" className="text-black mr-5">BOUTIQUE</a>
-                        <a href="/Contact" className="text-black">A PROPOS</a>
-                    </div>
+                    {/*<div className="nav_links text-lg">*/}
+                    {/*    <a href="/" className="text-black mr-5">ACCUEIL</a>*/}
+                    {/*    <a href="/News" className="text-black mr-5">BOUTIQUE</a>*/}
+                    {/*    <a href="/Contact" className="text-black">A PROPOS</a>*/}
+                    {/*</div>*/}
 
 
-                    <form className="search-box" onSubmit={handleSearch}>
-                        <div>
+                    {/*<form className="search-box" onSubmit={handleSearch}>*/}
+                    {/*    <div>*/}
 
-                            <button type="submit">
-                                <Image
-                                    src={search}
-                                    width={25}
-                                    height={25}
-                                    alt="Logo recherche"
-                                    className="mr-2"
-                                />
-                            </button>
-                            <button type="submit">
-                                <Image
-                                    src={panier}
-                                    width={25}
-                                    height={25}
-                                    alt="Logo panier"
-                                    className="mr-2"
-                                />
-                            </button>
-                            <button type="submit">
-                                <Image
-                                    src={user}
-                                    width={25}
-                                    height={25}
-                                    alt="Logo utilisateur"
-                                />
-                            </button>
-                        </div>
-                    </form>
+                    {/*        <button type="submit">*/}
+                    {/*            <Image*/}
+                    {/*                src={search}*/}
+                    {/*                width={25}*/}
+                    {/*                height={25}*/}
+                    {/*                alt="Logo recherche"*/}
+                    {/*                className="mr-2"*/}
+                    {/*            />*/}
+                    {/*        </button>*/}
+                    {/*        <button type="submit">*/}
+                    {/*            <Image*/}
+                    {/*                src={panier}*/}
+                    {/*                width={25}*/}
+                    {/*                height={25}*/}
+                    {/*                alt="Logo panier"*/}
+                    {/*                className="mr-2"*/}
+                    {/*            />*/}
+                    {/*        </button>*/}
+                    {/*        <button type="submit">*/}
+                    {/*            <Image*/}
+                    {/*                src={user}*/}
+                    {/*                width={25}*/}
+                    {/*                height={25}*/}
+                    {/*                alt="Logo utilisateur"*/}
+                    {/*            />*/}
+                    {/*        </button>*/}
+                    {/*    </div>*/}
+                    {/*</form>*/}
 
                 </nav>
             </div>
