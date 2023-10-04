@@ -1,4 +1,4 @@
-.FooterInstagram{
+.footerInstagram{
     display: flex;
     flex-direction: column;
 }
@@ -13,4 +13,27 @@ hr{
     height: 1px;
     background-color: #737373;
     margin-top: 2em;
+}
+
+.copyright{
+    font-family: 'Arial', sans-serif;
+}
+
+.under-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.containerr{
+    width: 100%;
+}
+
+.reseau{
+    display: flex;
+}
+
+.paiement{
+    display: flex;
 }
