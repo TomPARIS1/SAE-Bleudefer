@@ -4,6 +4,9 @@ import menuB from "@/img/menuB.jpg";
 import menuC from "@/img/menuC.jpg";
 import menuD from "@/img/menuD.jpg";
 import menuE from "@/img/menuE.jpg";
+import {Footer} from "@/components/footer"
+import forest from "@/img/forest.jpg";
+import ocean from "@/img/ocean.jpg"
 
 export default function Home() {
   return (
@@ -51,6 +54,8 @@ export default function Home() {
                 />
             </div>
         </div>
+
+        <Footer/>
     </main>
   )
 }
