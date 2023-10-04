@@ -1,7 +1,9 @@
 import Image from 'next/image'
 import {Navbar} from "@/components/header";
-import forest from "@/img/forest.jpg";
-import ocean from "@/img/ocean.jpg"
+import menuB from "@/img/menuB.jpg";
+import menuC from "@/img/menuC.jpg";
+import menuD from "@/img/menuD.jpg";
+import menuE from "@/img/menuE.jpg";
 
 export default function Home() {
   return (
@@ -16,17 +18,35 @@ export default function Home() {
         <div className="flex justify-center mt-5">
             <div className="mr-2">
                 <Image
-                    src={forest}
-                    width={500}
-                    height={500}
+                    src={menuB}
+                    width={350}
+                    height={350}
                     alt="Forest"
                 />
             </div>
             <div className="">
                 <Image
-                    src={ocean}
-                    width={500}
-                    height={500}
+                    src={menuC}
+                    width={350}
+                    height={350}
+                    alt="Ocean"
+                />
+            </div>
+        </div>
+        <div className="flex justify-center mt-2">
+            <div className="mr-2">
+                <Image
+                    src={menuD}
+                    width={350}
+                    height={350}
+                    alt="Forest"
+                />
+            </div>
+            <div className="">
+                <Image
+                    src={menuE}
+                    width={350}
+                    height={350}
                     alt="Ocean"
                 />
             </div>

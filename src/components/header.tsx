@@ -18,6 +18,7 @@ export const Navbar = function () {
 
             <div className="rectangle-nav">
                 <nav className="navbar">
+
                     <a href="/" className="logo">
                         <Image
                             src={logo}
@@ -27,11 +28,12 @@ export const Navbar = function () {
                         />
                     </a>
 
-                    <div className="nav_links text-xl">
+                    <div className="nav_links text-lg">
                         <a href="/" className="text-black mr-5">ACCUEIL</a>
                         <a href="/News" className="text-black mr-5">BOUTIQUE</a>
                         <a href="/Contact" className="text-black">A PROPOS</a>
                     </div>
+
 
                     <form className="search-box" onSubmit={handleSearch}>
                         <div>
