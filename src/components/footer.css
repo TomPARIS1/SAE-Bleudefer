@@ -1,0 +1,16 @@
+.FooterInstagram{
+    display: flex;
+    flex-direction: column;
+}
+
+a{
+    color: darkblue;
+}
+
+hr{
+    width: 100%;
+    border: none;
+    height: 1px;
+    background-color: #737373;
+    margin-top: 2em;
+}

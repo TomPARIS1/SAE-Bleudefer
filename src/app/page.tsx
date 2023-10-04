@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import {Navbar} from "@/components/header";
+import {Footer} from "@/components/footer"
 import forest from "@/img/forest.jpg";
 import ocean from "@/img/ocean.jpg"
 
@@ -31,6 +32,8 @@ export default function Home() {
                 />
             </div>
         </div>
+
+        <Footer/>
     </main>
   )
 }
