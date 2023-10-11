@@ -33,7 +33,7 @@ export const Footer = function () {
 
                     <div className="paiement">
                         <Image src={visa} width={25} height={25} alt="Logo Visa" className="mr-2" />
-                        <Image src={mastercard} width={25} height={25} alt="Logo Mastercard" className="mr-2" />
+                        <Image src={mastercard} width={35} height={25} alt="Logo Mastercard" className="mr-2" />
                         <Image src={paypal} width={25} height={25} alt="Logo PayPal" className="mr-2" />
                         <Image src={applepay} width={25} height={25} alt="Logo Apple Pay" className="mr-2" />
                     </div>

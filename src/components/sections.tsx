@@ -69,7 +69,7 @@ export const Sections = function () {
                         height={0}
                         alt="menuF"
                         className="border-2 border-sky-200"
-                        style={{ width: '41rem', height: '20rem', objectFit: 'none' }}
+                        style={{ width: '41rem', height: '20rem', objectFit: 'none',  }}
                     />
                 </a>
             </div>
