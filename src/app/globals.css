@@ -15,7 +15,7 @@
     transition: box-shadow 0.3s ease-in-out, transform 0.5s ease-in-out;
 }
 
-img:hover {
+.sections img:hover {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
     transform: scale(1.1);
 }
