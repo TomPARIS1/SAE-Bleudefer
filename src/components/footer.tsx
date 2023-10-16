@@ -39,7 +39,7 @@ export const Footer = function () {
                     </div>
                 </div>
                 <div className="footerInstagram flex justify-center mt-8">
-                    <h1 className="copyright"> © 2023, Bleu de fer propulsée par Steve, Tom & l’autre </h1>
+                    <h1 className="copyright"> © 2023, Bleu de fer propulsée par Tom & Steve </h1>
                 </div>
             </div>
         </div>

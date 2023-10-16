@@ -6,14 +6,28 @@ import menuC from "@/img/menuC.jpg";
 import menuD from "@/img/menuD.jpg";
 import menuE from "@/img/menuE.jpg";
 import menuF from "@/img/menuF.jpg";
+<<<<<<< Updated upstream
 import Link from 'next/link';
+=======
+import bande from "@/img/bande.jpg";
+>>>>>>> Stashed changes
 
 export const Sections = function () {
     return (
         <>
-            <div className="flex items-center justify-center mt-8">
-                <h1 className="text-2xl">"Une promenade poétique entre Terre et Mer inspirée par la beauté de la Bretagne"</h1>
+            <div className="bande relative">
+                <Image
+                    src={bande}
+                    width={0}
+                    height={0}
+                    alt="bande décorative"
+                    style={{ width: '100%', height: '10rem', objectFit: 'none' }}
+                />
+                <h1 className="text-2xl absolute text-white z-10 left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 p-4">
+                    Une promenade poétique entre Terre et Mer inspirée par la beauté de la Bretagne
+                </h1>
             </div>
+
             <div className="sections">
             <div className="flex justify-center mt-5">
                 <div className="mr-14">
