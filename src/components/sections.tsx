@@ -6,11 +6,8 @@ import menuC from "@/img/menuC.jpg";
 import menuD from "@/img/menuD.jpg";
 import menuE from "@/img/menuE.jpg";
 import menuF from "@/img/menuF.jpg";
-<<<<<<< Updated upstream
 import Link from 'next/link';
-=======
 import bande from "@/img/bande.jpg";
->>>>>>> Stashed changes
 
 export const Sections = function () {
     return (
