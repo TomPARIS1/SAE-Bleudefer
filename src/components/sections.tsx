@@ -13,6 +13,7 @@ export const Sections = function () {
             <div className="flex items-center justify-center mt-8">
                 <h1 className="text-2xl">"Une promenade poétique entre Terre et Mer inspirée par la beauté de la Bretagne"</h1>
             </div>
+            <div className="sections">
             <div className="flex justify-center mt-5">
                 <div className="mr-14">
                     <a href="">
@@ -72,6 +73,7 @@ export const Sections = function () {
                         style={{ width: '41rem', height: '20rem', objectFit: 'none',  }}
                     />
                 </a>
+            </div>
             </div>
         </>
     )
