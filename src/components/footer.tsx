@@ -16,8 +16,7 @@ export const Footer = function () {
     }
 
     return (
-        <div>
-            <div className="containerr px-12 py-12">
+            <div className="containerr px-12 py-12 bg-gray-100 mt-12">
                 <div className="under-container">
                     <div className="reseau">
                         <Image src={instagram} width={25} height={25} alt="Logo Instagram" className="mr-2" />
@@ -35,6 +34,5 @@ export const Footer = function () {
                     <h1 className="copyright"> © 2023, Bleu de fer propulsée par Tom & Steve </h1>
                 </div>
             </div>
-        </div>
     );
 }
