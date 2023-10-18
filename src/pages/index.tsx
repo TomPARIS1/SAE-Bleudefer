@@ -16,7 +16,7 @@ export default function Home() {
             <Navbar/>
         </header>
 
-        <div className="bande relative">
+        <div className="relative">
             <Image
                 src={bande}
                 width={0}

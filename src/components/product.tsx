@@ -29,7 +29,7 @@ export const Product = function () {
 
             <div className="flex justify-center my-8">
                 <div className="mr-12">
-                    <a href="">
+                    <Link href="/productDetails">
                         <Image
                             src={menuC}
                             width={250}
@@ -37,12 +37,12 @@ export const Product = function () {
                             alt="Ocean"
                             className="border-2 border-gray-200"
                         />
-                    </a>
+                    </Link>
                     <h1 className="mt-3">"Test" exemple de produit</h1>
                     <h2 className="mt-2 text-xl">99.99€</h2>
                 </div>
                 <div className="mr-12">
-                    <a href="">
+                    <Link href="/productDetails">
                         <Image
                             src={menuC}
                             width={250}
@@ -50,12 +50,12 @@ export const Product = function () {
                             alt="Ocean"
                             className="border-2 border-gray-200"
                         />
-                    </a>
+                    </Link>
                     <h1 className="mt-3">"Test" exemple de produit</h1>
                     <h2 className="mt-2 text-xl">99.99€</h2>
                 </div>
                 <div>
-                    <a href="">
+                    <Link href="/productDetails">
                         <Image
                             src={menuC}
                             width={250}
@@ -63,14 +63,14 @@ export const Product = function () {
                             alt="Ocean"
                             className="border-2 border-gray-200"
                         />
-                    </a>
+                    </Link>
                     <h1 className="mt-3">"Test" exemple de produit</h1>
                     <h2 className="mt-2 text-xl">99.99€</h2>
                 </div>
             </div>
             <div className="flex justify-center my-8">
                 <div className="mr-12">
-                    <a href="">
+                    <Link href="/productDetails">
                         <Image
                             src={menuC}
                             width={250}
@@ -78,12 +78,12 @@ export const Product = function () {
                             alt="Ocean"
                             className="border-2 border-gray-200"
                         />
-                    </a>
+                    </Link>
                     <h1 className="mt-3">"Test" exemple de produit</h1>
                     <h2 className="mt-2 text-xl">99.99€</h2>
                 </div>
                 <div className="mr-12">
-                    <a href="">
+                    <Link href="/productDetails">
                         <Image
                             src={menuC}
                             width={250}
@@ -91,12 +91,12 @@ export const Product = function () {
                             alt="Ocean"
                             className="border-2 border-grey-200"
                         />
-                    </a>
+                    </Link>
                     <h1 className="mt-3">"Test" exemple de produit</h1>
                     <h2 className="mt-2 text-xl">99.99€</h2>
                 </div>
                 <div>
-                    <a href="">
+                    <Link href="/productDetails">
                         <Image
                             src={menuC}
                             width={250}
@@ -104,14 +104,14 @@ export const Product = function () {
                             alt="Ocean"
                             className="border-2 border-gray-200"
                         />
-                    </a>
+                    </Link>
                     <h1 className="mt-3">"Test" exemple de produit</h1>
                     <h2 className="mt-2 text-xl">99.99€</h2>
                 </div>
             </div>
             <div className="flex justify-center">
                 <div className="mr-12">
-                    <a href="">
+                    <Link href="/productDetails">
                         <Image
                             src={menuC}
                             width={250}
@@ -119,12 +119,12 @@ export const Product = function () {
                             alt="Ocean"
                             className="border-2 border-gray-200"
                         />
-                    </a>
+                    </Link>
                     <h1 className="mt-3">"Test" exemple de produit</h1>
                     <h2 className="mt-2 text-xl">99.99€</h2>
                 </div>
                 <div className="mr-12">
-                    <a href="">
+                    <Link href="/productDetails">
                         <Image
                             src={menuC}
                             width={250}
@@ -132,12 +132,12 @@ export const Product = function () {
                             alt="Ocean"
                             className="border-2 border-gray-200"
                         />
-                    </a>
+                    </Link>
                     <h1 className="mt-3">"Test" exemple de produit</h1>
                     <h2 className="mt-2 text-xl">99.99€</h2>
                 </div>
                 <div>
-                    <a href="">
+                    <Link href="/productDetails">
                         <Image
                             src={menuC}
                             width={250}
@@ -145,7 +145,7 @@ export const Product = function () {
                             alt="Ocean"
                             className="border-2 border-gray-200"
                         />
-                    </a>
+                    </Link>
                     <h1 className="mt-3">"Test" exemple de produit</h1>
                     <h2 className="mt-2 text-xl">99.99€</h2>
                 </div>
