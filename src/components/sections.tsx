@@ -25,67 +25,69 @@ export const Sections = function () {
                 </h1>
             </div>
 
+            <h1 className="text-center pt-5 text-3xl">NOS COLLECTIONS</h1>
+
             <div className="sections">
-            <div className="flex justify-center mt-5">
-                <div className="mr-14">
-                    <a href="">
-                        <Image
-                            src={menuB}
-                            width={300}
-                            height={300}
-                            alt="Forest"
-                            className="border-2 border-sky-200"
-                        />
-                    </a>
+                <div className="flex justify-center mt-5">
+                    <div className="mr-14">
+                        <Link href="/shop">
+                            <Image
+                                src={menuB}
+                                width={300}
+                                height={300}
+                                alt="Forest"
+                                className="border-2 border-gray-200"
+                            />
+                        </Link>
+                    </div>
+                    <div className="">
+                        <Link href="/shop">
+                            <Image
+                                src={menuC}
+                                width={300}
+                                height={300}
+                                alt="Ocean"
+                                className="border-2 border-gray-200"
+                            />
+                        </Link>
+                    </div>
                 </div>
-                <div className="">
-                    <a href="">
-                        <Image
-                            src={menuC}
-                            width={300}
-                            height={300}
-                            alt="Ocean"
-                            className="border-2 border-sky-200"
-                        />
-                    </a>
+                <div className="flex justify-center mt-8">
+                    <div className="mr-14">
+                        <Link href="/shop">
+                            <Image
+                                src={menuD}
+                                width={300}
+                                height={300}
+                                alt="Forest"
+                                className="border-2 border-gray-200"
+                            />
+                        </Link>
+                    </div>
+                    <div className="">
+                        <Link href="/shop">
+                            <Image
+                                src={menuE}
+                                width={300}
+                                height={300}
+                                alt="Ocean"
+                                className="border-2 border-gray-200"
+                            />
+                        </Link>
+                    </div>
                 </div>
-            </div>
-            <div className="flex justify-center mt-8">
-                <div className="mr-14">
-                    <a href="">
+                <div className="flex justify-center mt-8">
+                    <Link href="/shop">
                         <Image
-                            src={menuD}
-                            width={300}
-                            height={300}
-                            alt="Forest"
-                            className="border-2 border-sky-200"
+                            src={menuF}
+                            width={0}
+                            height={0}
+                            alt="menuF"
+                            className="border-2 border-gray-200"
+                            style={{ width: '41rem', height: '20rem', objectFit: 'none',  }}
                         />
-                    </a>
+                    </Link>
                 </div>
-                <div className="">
-                    <a href="">
-                        <Image
-                            src={menuE}
-                            width={300}
-                            height={300}
-                            alt="Ocean"
-                            className="border-2 border-sky-200"
-                        />
-                    </a>
-                </div>
-            </div>
-            <div className="flex justify-center mt-8">
-                <a href="">
-                    <Image
-                        src={menuF}
-                        width={0}
-                        height={0}
-                        alt="menuF"
-                        className="border-2 border-sky-200"
-                        style={{ width: '41rem', height: '20rem', objectFit: 'none',  }}
-                    />
-                </a>
-            </div>
             </div>
         </>
     )

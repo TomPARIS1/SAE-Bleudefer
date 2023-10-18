@@ -3,6 +3,7 @@ import {Footer} from "@/components/footer"
 import {About} from "@/components/about";
 import {Sections} from "@/components/sections";
 import menuC from "@/img/menuC.jpg";
+import '../app/globals.css'
 
 import Image from 'next/image';
 import {Product} from "@/components/product";
@@ -14,7 +15,7 @@ export default function Home() {
             <Navbar/>
         </header>
 
-        <About/>
+        <Sections/>
 
         <Footer/>
     </main>

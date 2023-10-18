@@ -35,10 +35,10 @@ export const Product = function () {
                             width={250}
                             height={250}
                             alt="Ocean"
-                            className="border-2 border-sky-200"
+                            className="border-2 border-gray-200"
                         />
                     </a>
-                    <h1 className="mt-3">"LeAlex" peinture à l'encre de seiche</h1>
+                    <h1 className="mt-3">"Test" exemple de produit</h1>
                     <h2 className="mt-2 text-xl">99.99€</h2>
                 </div>
                 <div className="mr-12">
@@ -48,10 +48,10 @@ export const Product = function () {
                             width={250}
                             height={250}
                             alt="Ocean"
-                            className="border-2 border-sky-200"
+                            className="border-2 border-gray-200"
                         />
                     </a>
-                    <h1 className="mt-3">"LeAlex" peinture à l'encre de seiche</h1>
+                    <h1 className="mt-3">"Test" exemple de produit</h1>
                     <h2 className="mt-2 text-xl">99.99€</h2>
                 </div>
                 <div>
@@ -61,10 +61,10 @@ export const Product = function () {
                             width={250}
                             height={250}
                             alt="Ocean"
-                            className="border-2 border-sky-200"
+                            className="border-2 border-gray-200"
                         />
                     </a>
-                    <h1 className="mt-3">"LeAlex" peinture à l'encre de seiche</h1>
+                    <h1 className="mt-3">"Test" exemple de produit</h1>
                     <h2 className="mt-2 text-xl">99.99€</h2>
                 </div>
             </div>
@@ -76,10 +76,10 @@ export const Product = function () {
                             width={250}
                             height={250}
                             alt="Ocean"
-                            className="border-2 border-sky-200"
+                            className="border-2 border-gray-200"
                         />
                     </a>
-                    <h1 className="mt-3">"LeAlex" peinture à l'encre de seiche</h1>
+                    <h1 className="mt-3">"Test" exemple de produit</h1>
                     <h2 className="mt-2 text-xl">99.99€</h2>
                 </div>
                 <div className="mr-12">
@@ -89,10 +89,10 @@ export const Product = function () {
                             width={250}
                             height={250}
                             alt="Ocean"
-                            className="border-2 border-sky-200"
+                            className="border-2 border-grey-200"
                         />
                     </a>
-                    <h1 className="mt-3">"LeAlex" peinture à l'encre de seiche</h1>
+                    <h1 className="mt-3">"Test" exemple de produit</h1>
                     <h2 className="mt-2 text-xl">99.99€</h2>
                 </div>
                 <div>
@@ -102,10 +102,10 @@ export const Product = function () {
                             width={250}
                             height={250}
                             alt="Ocean"
-                            className="border-2 border-sky-200"
+                            className="border-2 border-gray-200"
                         />
                     </a>
-                    <h1 className="mt-3">"LeAlex" peinture à l'encre de seiche</h1>
+                    <h1 className="mt-3">"Test" exemple de produit</h1>
                     <h2 className="mt-2 text-xl">99.99€</h2>
                 </div>
             </div>
@@ -117,10 +117,10 @@ export const Product = function () {
                             width={250}
                             height={250}
                             alt="Ocean"
-                            className="border-2 border-sky-200"
+                            className="border-2 border-gray-200"
                         />
                     </a>
-                    <h1 className="mt-3">"LeAlex" peinture à l'encre de seiche</h1>
+                    <h1 className="mt-3">"Test" exemple de produit</h1>
                     <h2 className="mt-2 text-xl">99.99€</h2>
                 </div>
                 <div className="mr-12">
@@ -130,10 +130,10 @@ export const Product = function () {
                             width={250}
                             height={250}
                             alt="Ocean"
-                            className="border-2 border-sky-200"
+                            className="border-2 border-gray-200"
                         />
                     </a>
-                    <h1 className="mt-3">"LeAlex" peinture à l'encre de seiche</h1>
+                    <h1 className="mt-3">"Test" exemple de produit</h1>
                     <h2 className="mt-2 text-xl">99.99€</h2>
                 </div>
                 <div>
@@ -143,10 +143,10 @@ export const Product = function () {
                             width={250}
                             height={250}
                             alt="Ocean"
-                            className="border-2 border-sky-200"
+                            className="border-2 border-gray-200"
                         />
                     </a>
-                    <h1 className="mt-3">"LeAlex" peinture à l'encre de seiche</h1>
+                    <h1 className="mt-3">"Test" exemple de produit</h1>
                     <h2 className="mt-2 text-xl">99.99€</h2>
                 </div>
             </div>
