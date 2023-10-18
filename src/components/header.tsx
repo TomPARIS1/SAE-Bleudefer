@@ -14,11 +14,9 @@ export const Navbar = function () {
     }
 
     return (
-        <div>
-            <div className="aroundheader">
-                <div className="rectangle-nav">
-                    <nav className="">
-                        <div className="logo">
+                    <nav className="p-4 !grid grid-cols-3 gap-4">
+
+                        <div className="logo col-start-2 flex justify-center">
                             <Image
                                 src={logo}
                                 width={100}
@@ -26,40 +24,39 @@ export const Navbar = function () {
                                 alt="Logo Bleu de Fer"
                             />
                         </div>
-                        {/*<div className="params">*/}
-                        {/*<form className="search-box" onSubmit={handleSearch}>*/}
-                        {/*    <button type="submit">*/}
-                        {/*        <Image*/}
-                        {/*            src={search}*/}
-                        {/*            width={25}*/}
-                        {/*            height={25}*/}
-                        {/*            alt="Logo recherche"*/}
-                        {/*            className="mr-2"*/}
-                        {/*        />*/}
-                        {/*    </button>*/}
-                        {/*    <button type="submit">*/}
-                        {/*        <Image*/}
-                        {/*            src={panier}*/}
-                        {/*            width={25}*/}
-                        {/*            height={25}*/}
-                        {/*            alt="Logo panier"*/}
-                        {/*            className="mr-2"*/}
-                        {/*        />*/}
-                        {/*    </button>*/}
-                        {/*    <button type="submit">*/}
-                        {/*        <Image*/}
-                        {/*            src={user}*/}
-                        {/*            width={25}*/}
-                        {/*            height={25}*/}
-                        {/*            alt="Logo utilisateur"*/}
-                        {/*        />*/}
-                        {/*    </button>*/}
-                        {/*</form>*/}
-                        {/*</div>*/}
+
+                        <div className="params mr-12">
+                            <form className="search-box" onSubmit={handleSearch}>
+                                <button type="submit">
+                                    <Image
+                                        src={search}
+                                        width={25}
+                                        height={25}
+                                        alt="Logo recherche"
+                                        className="mr-2"
+                                    />
+                                </button>
+                                <button type="submit">
+                                    <Image
+                                        src={panier}
+                                        width={25}
+                                        height={25}
+                                        alt="Logo panier"
+                                        className="mr-2"
+                                    />
+                                </button>
+                                <button type="submit">
+                                    <Image
+                                        src={user}
+                                        width={25}
+                                        height={25}
+                                        alt="Logo utilisateur"
+                                    />
+                                </button>
+                            </form>
+                        </div>
+
                     </nav>
-                </div>
-            </div>
-        </div>
     );
 
 
