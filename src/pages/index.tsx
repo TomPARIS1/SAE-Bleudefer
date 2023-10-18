@@ -2,6 +2,7 @@ import {Navbar} from "@/components/header";
 import {Footer} from "@/components/footer"
 import {About} from "@/components/about";
 import {Sections} from "@/components/sections";
+import {Nouveautes} from "@/components/nouveautes";
 import menuC from "@/img/menuC.jpg";
 import '../app/globals.css'
 
@@ -28,6 +29,8 @@ export default function Home() {
                 Une promenade poétique entre Terre et Mer inspirée par la beauté de la Bretagne
             </h1>
         </div>
+
+        <Nouveautes/>
 
         <Sections/>
 

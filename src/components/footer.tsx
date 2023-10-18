@@ -17,13 +17,6 @@ export const Footer = function () {
 
     return (
         <div>
-            <div className="footerInstagram flex items-center justify-center mt-8">
-                <h1 className="text-xl"> Je suis aussi disponible sur instagram! </h1>
-                <a href={"https://www.instagram.com/bleu_de_fer/"}> https://www.instagram.com/bleu_de_fer/ </a>
-            </div>
-
-            <hr/>
-
             <div className="containerr px-12 py-12">
                 <div className="under-container">
                     <div className="reseau">
