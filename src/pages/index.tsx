@@ -5,7 +5,7 @@ import {Sections} from "@/components/sections";
 import {Nouveautes} from "@/components/nouveautes";
 import menuC from "@/img/menuC.jpg";
 import '../app/globals.css'
-
+import TrendingSlider from "@/components/TrendingSlider";
 import Image from 'next/image';
 import {Product} from "@/components/product";
 import bande from "@/img/bande.jpg";
