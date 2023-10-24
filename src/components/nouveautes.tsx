@@ -2,12 +2,14 @@
 
 import Image from 'next/image';
 import menuC from "@/img/menuC.jpg";
+import menuD from "@/img/menuD.jpg";
+import menuE from "@/img/menuE.jpg";
 import Link from 'next/link';
 
 export const Nouveautes = function () {
     return (
         <>
-            <h1 className="text-center text-3xl my-5">Les nouveautés</h1>
+            <h1 className="text-center text-3xl my-5">LES NOUVEAUTÉS</h1>
 
             <div className="flex justify-center my-8 gap-12">
                 <div className="mr-12">
@@ -24,7 +26,7 @@ export const Nouveautes = function () {
                 <div className="mr-12">
                     <a href="">
                         <Image
-                            src={menuC}
+                            src={menuD}
                             width={250}
                             height={250}
                             alt="Ocean"
@@ -35,7 +37,7 @@ export const Nouveautes = function () {
                 <div>
                     <a href="">
                         <Image
-                            src={menuC}
+                            src={menuE}
                             width={250}
                             height={250}
                             alt="Ocean"
