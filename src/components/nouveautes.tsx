@@ -9,9 +9,9 @@ import Link from 'next/link';
 export const Nouveautes = function () {
     return (
         <>
-            <h1 className="text-center text-3xl my-5">LES NOUVEAUTÉS</h1>
+            <h1 className="text-center text-3xl mt-7">LES NOUVEAUTÉS</h1>
 
-            <div className="flex justify-center my-8 gap-12">
+            <div className="flex justify-center mt-5 gap-12">
                 <div className="mr-12">
                     <a href="">
                         <Image

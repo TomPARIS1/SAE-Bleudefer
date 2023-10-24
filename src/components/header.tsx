@@ -15,7 +15,7 @@ export const Navbar = function () {
     }
 
     return (
-                    <nav className="p-4 !grid grid-cols-3 gap-4">
+                    <nav className="p-4 !grid grid-cols-3">
 
                         <div className="logo col-start-2 flex justify-center">
                             <Link href="/">
