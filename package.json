@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "next": "latest",
+    "particles.js": "^2.0.0",
     "react": "latest",
     "react-dom": "latest",
     "react-icons": "^4.11.0"
