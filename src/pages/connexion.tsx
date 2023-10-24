@@ -1,8 +1,3 @@
-import {Navbar} from "@/components/header";
-import {Footer} from "@/components/footer"
-import {About} from "@/components/about";
-import {Sections} from "@/components/sections";
-import {Nouveautes} from "@/components/nouveautes";
 import {Connexion} from "@/components/connexion.tsx";
 import menuC from "@/img/menuC.jpg";
 import '../app/globals.css'

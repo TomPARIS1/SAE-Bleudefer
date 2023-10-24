@@ -1,17 +1,17 @@
-import logo from '../img/LOGO_bleu_de_fer.png'
-import search from '../img/search.png'
-import user from '../img/user.png'
-import panier from '../img/panier.png'
 import Image from 'next/image'
+import '../app/globals.css'
+import backgroundSVG from "@/img/Ocean.jpg";
+import React from "react";
 import './navbar.css'
-import menuC from "@/img/menuC.jpg";
 import Link from "next/link";
 
 export const Connexion = function () {
 
+
     return (
-        <div className="bg-gray-800 min-h-screen flex items-center justify-center">
-            <div className="bg-black bg-opacity-50 p-8 rounded-lg">
+        <div className="bg-gray-200 min-h-screen flex items-center justify-center">
+
+            <div className="bg-black bg-opacity-50 p-8 rounded-lg z-10">
                 <h1 className="text-2xl text-white mb-4">Connexion</h1>
 
                 <form>
@@ -33,7 +33,7 @@ export const Connexion = function () {
                         />
                     </div>
 
-                    <button className="bg-gray-600 text-white p-2 rounded hover:bg-gray-700">
+                    <button className="bg-blue-500 text-white p-2 rounded hover:bg-blue-700">
                         Se connecter
                     </button>
                 </form>
@@ -42,6 +42,18 @@ export const Connexion = function () {
                     <p>Vous n'avez pas de compte ?</p>
                     <a href="/inscription" className="underline">Créer un compte</a>
                 </div>
+            </div>
+
+            <div className="animation-container-full-screen absolute inset-0 pointer-events-none z-0">
+                <Link href="/connexion">
+                    <Image
+                        src={backgroundSVG}
+                        width={2000}
+                        height={2000}
+                        alt="Animated Background"
+                        className="full-screen-image"
+                    />
+                </Link>
             </div>
         </div>
     );
