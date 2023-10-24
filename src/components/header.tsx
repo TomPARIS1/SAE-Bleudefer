@@ -7,6 +7,7 @@ import panier from '../img/panier.png'
 import Image from 'next/image'
 import './navbar.css'
 import Link from "next/link";
+import ShoppingCart from "@/pages/shoppingCart";
 
 export const Navbar = function () {
 
@@ -40,6 +41,7 @@ export const Navbar = function () {
                                     />
                                 </button>
                                 <button type="submit">
+                                    <Link href="/ShoppingCart">
                                     <Image
                                         src={panier}
                                         width={25}
@@ -47,6 +49,7 @@ export const Navbar = function () {
                                         alt="Logo panier"
                                         className="mr-2"
                                     />
+                                    </Link>
                                 </button>
                                 <button type="submit">
                                     <Link href="/connexion">
