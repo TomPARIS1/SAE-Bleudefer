@@ -6,6 +6,7 @@ import user from '../img/user.png'
 import panier from '../img/panier.png'
 import Image from 'next/image'
 import './navbar.css'
+import Link from "next/link";
 
 export const Navbar = function () {
 
@@ -17,12 +18,14 @@ export const Navbar = function () {
                     <nav className="p-4 !grid grid-cols-3 gap-4">
 
                         <div className="logo col-start-2 flex justify-center">
-                            <Image
-                                src={logo}
-                                width={100}
-                                height={100}
-                                alt="Logo Bleu de Fer"
-                            />
+                            <Link href="/">
+                                <Image
+                                    src={logo}
+                                    width={100}
+                                    height={100}
+                                    alt="Logo Bleu de Fer"
+                                />
+                            </Link>
                         </div>
 
                         <div className="params mr-12">
