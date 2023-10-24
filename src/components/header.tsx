@@ -6,6 +6,7 @@ import user from '../img/user.png'
 import panier from '../img/panier.png'
 import Image from 'next/image'
 import './navbar.css'
+import Link from "next/link";
 
 export const Navbar = function () {
 
@@ -46,12 +47,14 @@ export const Navbar = function () {
                                     />
                                 </button>
                                 <button type="submit">
+                                    <Link href="/connexion">
                                     <Image
                                         src={user}
                                         width={25}
                                         height={25}
                                         alt="Logo utilisateur"
                                     />
+                                    </Link>
                                 </button>
                             </form>
                         </div>
