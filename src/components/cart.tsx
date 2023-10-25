@@ -1,5 +1,7 @@
 import React from 'react';
+import Image from 'next/image';
 import './cart.css';
+import menuC from "@/img/menuC.jpg";
 
 export const Cart = function () {
     return (
@@ -19,14 +21,17 @@ export const Cart = function () {
                     <div className="flex items-center hover:bg-gray-100 -mx-8 px-6 py-5">
                         <div className="flex w-2/5">
                             <div className="w-20">
-                                <img className="h-24"
-                                     src="https://drive.google.com/uc?id=18KkAVkGFvaGNqPy2DIvTqmUH_nk39o3z"
-                                     alt=""
+                                <Image
+                                    src={menuC}
+                                    width={250}
+                                    height={250}
+                                    alt="Ocean"
+                                    className="border-2 border-gray-200"
                                 />
                             </div>
                             <div className="flex flex-col justify-between ml-4 flex-grow">
-                                <span className="font-bold text-sm">Iphone 6S</span>
-                                <span className="text-red-500 text-xs">Apple</span>
+                                <span className="font-bold text-sm">Cadre bleu</span>
+                                <span className="text-red-500 text-xs">Bleu de fer</span>
                                 <a href="#"
                                    className="font-semibold hover:text-red-500 text-gray-500 text-xs">Remove</a>
                             </div>
