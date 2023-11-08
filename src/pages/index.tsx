@@ -4,6 +4,7 @@ import {About} from "@/components/about";
 import {Sections} from "@/components/sections";
 import {Nouveautes} from "@/components/nouveautes";
 import menuC from "@/img/menuC.jpg";
+import {Slider} from "@/components/slider";
 import '../app/globals.css'
 import TrendingSlider from "@/components/TrendingSlider";
 import Image from 'next/image';
@@ -34,6 +35,7 @@ export default function Home() {
         <Nouveautes/>
 
         <Sections/>
+
 
         <Footer/>
     </main>
