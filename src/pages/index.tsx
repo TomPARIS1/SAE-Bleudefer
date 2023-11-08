@@ -9,6 +9,7 @@ import TrendingSlider from "@/components/TrendingSlider";
 import Image from 'next/image';
 import {Product} from "@/components/product";
 import bande from "@/img/bande.jpg";
+import {Slider} from "@/components/slider";
 
 export default function Home() {
   return (

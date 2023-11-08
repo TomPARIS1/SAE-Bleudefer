@@ -6,39 +6,45 @@ import menuC from "@/img/menuC.jpg";
 import menuD from "@/img/menuD.jpg";
 import menuE from "@/img/menuE.jpg";
 import menuF from "@/img/menuF.jpg";
+import { useSearchParams } from 'next/navigation'
 import Link from 'next/link';
 
 export const ProductDesc = function () {
+    const searchParams = useSearchParams();
+    const img = searchParams.get('img');
+    const productName = searchParams.get('productName');
+    const productPrice = searchParams.get('productPrice');
+
     return (
         <>
             <div className="flex justify-center mt-8">
                 <div>
                     <Image
-                        src={menuC}
+                        src={img}
                         width={360}
                         height={360}
-                        alt="Ocean"
+                        alt="Image Produit"
                         className="border-2 border-gray-200"
                     />
                     <div className="flex mt-5 cursor-pointer">
                         <Image
-                            src={menuC}
+                            src={img}
                             width={100}
                             height={100}
-                            alt="Ocean"
+                            alt="Image Produit"
                             className="border-4 border-yellow-300 mr-5"
                         />
                         <Image
-                            src={menuC}
+                            src={img}
                             width={100}
                             height={100}
-                            alt="Ocean"
+                            alt="Image Produit"
                             className="border-2 border-gray-200"
                         />
                     </div>
                 </div>
                 <div className="ml-8">
-                    <h1 className="text-3xl">"Test" exemple de peinture, exemplaire unique <br/> 99.99€ </h1>
+                    <h1 className="text-3xl">{productName}, exemplaire unique <br/> {productPrice}</h1>
                     <p className="text-xl">Quantité: 1</p>
                     <br/>
                     <p className="max-w-xl text-lg">

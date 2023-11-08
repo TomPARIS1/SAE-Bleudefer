@@ -41,7 +41,7 @@ export const Navbar = function () {
                                     />
                                 </button>
                                 <button type="submit">
-                                    <Link href="/ShoppingCart">
+                                    <Link href="/shoppingCart">
                                     <Image
                                         src={panier}
                                         width={25}
