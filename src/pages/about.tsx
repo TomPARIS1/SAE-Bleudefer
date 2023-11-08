@@ -1,7 +1,6 @@
 import {Connexion} from "@/components/connexion.tsx";
 import menuC from "@/img/menuC.jpg";
 import '../app/globals.css'
-import TrendingSlider from "@/components/TrendingSlider";
 import Image from 'next/image';
 import {Product} from "@/components/product";
 import bande from "@/img/bande.jpg";
