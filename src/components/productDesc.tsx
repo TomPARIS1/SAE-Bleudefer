@@ -20,7 +20,7 @@ export const ProductDesc = function () {
             <div className="flex justify-center mt-8">
                 <div>
                     <Image
-                        src={img}
+                        src={menuB}
                         width={360}
                         height={360}
                         alt="Image Produit"
@@ -28,14 +28,14 @@ export const ProductDesc = function () {
                     />
                     <div className="flex mt-5 cursor-pointer">
                         <Image
-                            src={img}
+                            src={menuB}
                             width={100}
                             height={100}
                             alt="Image Produit"
                             className="border-4 border-yellow-300 mr-5"
                         />
                         <Image
-                            src={img}
+                            src={menuB}
                             width={100}
                             height={100}
                             alt="Image Produit"
