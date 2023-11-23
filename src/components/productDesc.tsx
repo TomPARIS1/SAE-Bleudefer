@@ -6,14 +6,51 @@ import menuC from "@/img/menuC.jpg";
 import menuD from "@/img/menuD.jpg";
 import menuE from "@/img/menuE.jpg";
 import menuF from "@/img/menuF.jpg";
-import { useSearchParams } from 'next/navigation'
-import Link from 'next/link';
+import { useEffect, useState } from 'react';
+import { useSearchParams } from 'next/navigation';
+import { AddToCartButton } from './add-to-cart-button';
 
-export const ProductDesc = function () {
+// import { createOrder } from '../../../actions/create-orders';
+import { PRODUCTS_CATEGORY_DATA} from "@/products-category.data";
+
+type Props = {
+    categorySlug: string;
+    productSlug: string;
+};
+
+ const getProductBySlug = (categorySlug: string, productSlug: string) => {
+    const category = PRODUCTS_CATEGORY_DATA.find((c) => c.slug === categorySlug);
+
+    if (category) {
+        const product = category.products.find((p) => p.slug === productSlug);
+
+        if (product) {
+            return product;
+        }
+    }
+
+    return null;
+};
+
+export function ProductDesc({ params }: Props) {
+    const [product, setProduct] = useState(null);
     const searchParams = useSearchParams();
     const img = searchParams.get('img');
     const productName = searchParams.get('productName');
     const productPrice = searchParams.get('productPrice');
+
+    // useEffect(() => {
+    //     const productData = getProductBySlug(params.categorySlug, params.productSlug);
+    //     setProduct(productData);
+    // }, [params.categorySlug, params.productSlug]);
+    //
+    // const handleAddToCartClick = async () => {
+    //     try {
+    //         //...
+    //     } catch (error) {
+    //         console.error('An unexpected error occurred:', error);
+    //     }
+    // };
 
     return (
         <>
@@ -59,10 +96,8 @@ export const ProductDesc = function () {
                         vitae consectetur magna elementum vitae. Nulla ut bibendum nulla, sit amet luctus massa. Donec
                         condimentum finibus ex sit amet auctor.
                     </p>
-                    <button
-                        className="px-6 py-2 transition ease-in duration-200 uppercase rounded-full hover:bg-gray-800 hover:text-white border-2 border-gray-900 focus:outline-none mt-5 font-sans">
-                        Ajouter au panier
-                    </button>
+                    button={<AddToCartButton product={product} />}
+
                 </div>
 
             </div>
