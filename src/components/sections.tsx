@@ -28,7 +28,7 @@ export const Sections = function () {
                             />
                         </Link>
                     </div>
-                    <div className="">
+                    <div className="mr-14">
                         <Link href="/shop">
                             <Image
                                 src={menuC}
@@ -39,8 +39,7 @@ export const Sections = function () {
                             />
                         </Link>
                     </div>
-                </div>
-                <div className="flex justify-center mt-8">
+
                     <div className="mr-14">
                         <Link href="/shop">
                             <Image
@@ -64,19 +63,6 @@ export const Sections = function () {
                         </Link>
                     </div>
                 </div>
-                <div className="flex justify-center mt-8">
-                    <Link href="/shop">
-                        <Image
-                            src={menuF}
-                            width={0}
-                            height={0}
-                            alt="menuF"
-                            className="border-2 border-gray-200"
-                            style={{ width: '41rem', height: '20rem', objectFit: 'none',  }}
-                        />
-                    </Link>
-                </div>
-
             </div>
         </>
     )
