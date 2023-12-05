@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.link {
+  @apply transition-colors hover:text-blue-300 active:text-blue-300 cursor-pointer;
+}
