@@ -3,6 +3,7 @@ import { PRODUCTS_CATEGORY_DATA } from "tp-kit/data";
 import { ProductList } from "../../components/product-list";
 import { NextPageProps } from "../../types";
 import { Metadata } from "next";
+import prisma from "../../utils/prisma";
 const category = PRODUCTS_CATEGORY_DATA[0];
 
 type Props = {
@@ -16,9 +17,15 @@ export async function generateMetadata({ params, searchParams} : NextPageProps<P
   }
 }
 
-export default function CategoryPage({params}: NextPageProps<Props>) {
+export default async function CategoryPage({params}: NextPageProps<Props>) {
+  const categories = await prisma.productCategory.findMany({
+    include: {
+      products: true
+    }
+  });
+
   return <SectionContainer wrapperClassName="max-w-5xl">
-    <ProductList categories={[category]} />
+    <ProductList categories={[categories]} />
     <div className="flex justify-center mt-10">
       <button type="button"
               className="text-black bg-white rotate-180 focus:outline-none font-medium rounded-lg text-sm mr-5 text-center inline-flex items-center mr-2">

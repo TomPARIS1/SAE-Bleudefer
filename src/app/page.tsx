@@ -10,8 +10,8 @@ import carousel1 from "../img/carousel/carousel1.jpg";
 import carousel2 from "../img/carousel/carousel2.jpg";
 import carousel3 from "../img/carousel/carousel3.jpg";
 import carousel4 from "../img/carousel/carousel4.jpg";
-
 import {Carousel} from 'antd';
+import prisma from "../utils/prisma";
 
 const categories = PRODUCTS_CATEGORY_DATA;
 
@@ -20,7 +20,19 @@ export const metadata: Metadata = {
     description: "Découvrez des oeuvres d'art uniques inspirées par la fraicheur de la Bretagne"
 }
 
-export default function Home() {
+export default async function Home() {
+    const product = await prisma.productCategory.findMany({
+        include: {
+            products: true
+        }
+    });
+
+    const categories = await prisma.productCategory.findMany({
+        include: {
+            products: true
+        }
+    });
+
     return (
         <>
             {/*Bande décorative*/}
@@ -39,7 +51,7 @@ export default function Home() {
 
             {/*Nouveautes*/}
             <h1 className="text-center text-3xl mt-7">LES NOUVEAUTÉS</h1>
-            <NewProduct categories={categories}/>
+            <NewProduct categories={product}/>
 
             {/*Categories*/}
             <h1 className="text-center text-3xl">NOS COLLECTIONS</h1>

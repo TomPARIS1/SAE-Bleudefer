@@ -7,6 +7,7 @@ import {ProductFiltersResult} from "../types";
 import {filterProducts} from "../utils/filter-products";
 import Link from "next/link";
 import {AddToCartButton} from "./add-to-cart-button";
+import prisma from "../utils/prisma";
 
 type Props = {
     categories: ProductsCategoryData[];
@@ -15,7 +16,7 @@ type Props = {
 
 const ProductList: FC<Props> = memo(function ({categories, showFilters = false}) {
     const [filters, setFilters] = useState<ProductFiltersResult | undefined>();
-    const filteredCategories = useMemo(() => filterProducts(categories, filters), [filters, categories]);
+    const [filteredCategories, setFilteredCategories] = useState<ProductsCategoryData[]>(categories);
 
     return (
         <div className="flex flex-row gap-8 mt-4">
