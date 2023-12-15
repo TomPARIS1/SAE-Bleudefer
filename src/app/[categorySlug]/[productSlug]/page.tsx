@@ -1,31 +1,16 @@
 import {
-  BreadCrumbs,
-  Button,
   FormattedPrice,
   ProductCardLayout,
   ProductGridLayout,
-  ProductRating,
   ProductImage,
   SectionContainer,
 } from "tp-kit/components";
 import { NextPageProps } from "../../../types";
-import { PRODUCTS_CATEGORY_DATA } from "tp-kit/data";
 import { Metadata } from "next";
 import prisma from "../../../utils/prisma";
 import { cache } from "react";
 import { notFound } from "next/navigation";
-import {
-  ProductAttribute,
-  ProductAttributesTable,
-} from "../../../components/product-attributes-table";
 import { AddToCartButton } from "../../../components/add-to-cart-button";
-const product = {
-  ...PRODUCTS_CATEGORY_DATA[0].products[0],
-  category: {
-    ...PRODUCTS_CATEGORY_DATA[0],
-    products: PRODUCTS_CATEGORY_DATA[0].products.slice(1),
-  },
-};
 
 const getProduct = cache((slug: string) => prisma.product.findUnique({
   where: {slug},
@@ -46,15 +31,18 @@ type Props = {
 };
 
 export async function generateMetadata({
-                                         params,
-                                         searchParams,
+                                           params,
+                                           searchParams,
                                        }: NextPageProps<Props>): Promise<Metadata> {
-  return {
-    title: product.name,
-    description:
-        product.desc ??
-        `Succombez pour notre ${product.name} et commandez-le sur notre site !`,
-  };
+    const product = await getProduct(params.productSlug);
+    if (!product) return {};
+
+    return {
+        title: product.name,
+        description:
+            product.desc ??
+            `Découvrez l'oeuvre ${product.name} et commandez-la sur notre site !`,
+    };
 }
 
 export default async function ProductPage({ params }: NextPageProps<Props>) {
