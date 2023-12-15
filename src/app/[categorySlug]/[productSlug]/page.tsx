@@ -11,6 +11,9 @@ import {
 import { NextPageProps } from "../../../types";
 import { PRODUCTS_CATEGORY_DATA } from "tp-kit/data";
 import { Metadata } from "next";
+import prisma from "../../../utils/prisma";
+import { cache } from "react";
+import { notFound } from "next/navigation";
 import {
   ProductAttribute,
   ProductAttributesTable,
@@ -23,6 +26,19 @@ const product = {
     products: PRODUCTS_CATEGORY_DATA[0].products.slice(1),
   },
 };
+
+const getProduct = cache((slug: string) => prisma.product.findUnique({
+  where: {slug},
+  include: {
+    category: {
+      include: {
+        products: {
+          where: { slug: {not: slug}}
+        }
+      }
+    }
+  }
+}));
 
 type Props = {
   categorySlug: string;
@@ -42,6 +58,9 @@ export async function generateMetadata({
 }
 
 export default async function ProductPage({ params }: NextPageProps<Props>) {
+  const product = await getProduct(params.productSlug);
+  if (!product) notFound();
+
   return (
       <SectionContainer wrapperClassName="max-w-5xl pt-5">
 
@@ -65,17 +84,7 @@ export default async function ProductPage({ params }: NextPageProps<Props>) {
                 <FormattedPrice price={product.price} />
               </p>
               {/* Desc */}
-              <p className="text-lg py-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus justo, dapibus eget
-                tempor nec, tristique vitae tortor.
-                Ut ultrices fermentum mollis. Donec euismod dolor ut turpis lobortis, in pretium massa
-                sollicitudin. Orci varius natoque penatibus
-                et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse potenti. Praesent
-                consequat, urna ac convallis interdum, massa urna
-                fermentum mi, eget venenatis urna elit id mi. Integer sollicitudin lorem vitae egestas
-                efficitur. Pellentesque vehicula tincidunt ligula,
-                vitae consectetur magna elementum vitae. Nulla ut bibendum nulla, sit amet luctus massa. Donec
-                condimentum finibus ex sit amet auctor.
-                <br/>
+              <p className="text-lg py-5">
                 {product.desc}
               </p>
 
