@@ -4,28 +4,26 @@ import { ProductList } from "../../components/product-list";
 import { NextPageProps } from "../../types";
 import { Metadata } from "next";
 import prisma from "../../utils/prisma";
-const category = PRODUCTS_CATEGORY_DATA[0];
+import { cache } from "react";
+import { notFound } from "next/navigation";
 
 type Props = {
   categorySlug: string;
 };
 
-export async function generateMetadata({ params, searchParams} : NextPageProps<Props>) : Promise<Metadata> {
-  return {
-    title: category.name,
-    description: `Trouvez votre inspiration avec un vaste choix de boissons Starbucks parmi nos produits ${category.name}`
+const getCategory = cache((slug: string) => prisma.productCategory.findUnique({
+  where: {slug},
+  include: {
+    products: true
   }
-}
+}));
 
 export default async function CategoryPage({params}: NextPageProps<Props>) {
-  const categories = await prisma.productCategory.findMany({
-    include: {
-      products: true
-    }
-  });
+  const category = await getCategory(params.categorySlug);
+  if (!category) notFound();
 
   return <SectionContainer wrapperClassName="max-w-5xl">
-    <ProductList categories={[categories]} />
+    <ProductList categories={[category]} />
     <div className="flex justify-center mt-10">
       <button type="button"
               className="text-black bg-white rotate-180 focus:outline-none font-medium rounded-lg text-sm mr-5 text-center inline-flex items-center mr-2">
