@@ -1,6 +1,4 @@
-import {BreadCrumbs, SectionContainer} from "tp-kit/components";
 import {PRODUCTS_CATEGORY_DATA} from "tp-kit/data";
-import {ProductList} from "../components/product-list";
 import {Metadata} from "next";
 import {CategoryList} from "../components/category-list";
 import Image from 'next/image';
