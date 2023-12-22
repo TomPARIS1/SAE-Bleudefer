@@ -1,7 +1,10 @@
-import { ProductCardLayout } from "/components-kit/product-card-layout"
-import { ProductGridLayout } from "/components-kit/product-grid-layout"
-import { ProductImage } from "/components-kit/product-image"
-import { SectionContainer } from "/components-kit/section-container"
+import {
+  FormattedPrice,
+  ProductCardLayout,
+  ProductGridLayout,
+  ProductImage,
+  SectionContainer,
+} from "tp-kit/components";
 import { NextPageProps } from "../../../types";
 import { Metadata } from "next";
 import prisma from "../../../utils/prisma";
@@ -66,7 +69,7 @@ export default async function ProductPage({ params }: NextPageProps<Props>) {
               {/* Product Name */}
               <h1 className="text-3xl">{product.name}, exemplaire unique</h1>
               <p className="!my-0 text-2xl">
-                  {product.price} €
+                <FormattedPrice price={product.price} />
               </p>
               {/* Desc */}
               <p className="text-lg py-5">

@@ -2,6 +2,7 @@ import { FC, ReactNode, memo } from "react";
 import { ProductImage } from "./product-image";
 import Link from "next/link";
 import { ProductData } from "../../types";
+import { FormattedPrice } from "../data-display/formatted-price";
 
 type Props = {
   /**
@@ -43,7 +44,7 @@ const ProductCardLayout: FC<Props> = memo(function (props) {
           
         </div>
 		<p className="w-[64px] text-left">
-            {props.product.price} €
+            <FormattedPrice price={props.product.price} />
           </p>
       </div>
     </div>

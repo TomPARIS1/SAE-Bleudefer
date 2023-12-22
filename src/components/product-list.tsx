@@ -1,9 +1,10 @@
 "use client";
 import {FC, memo, useMemo, useState} from "react";
-import {ProductsCategoryData} from "/components-kit/types";
-import {ProductCardLayout} from "/components-kit/product-card-layout";
-import {ProductGridLayout} from "/components-kit/product-grid-layout"
+import {ProductFilters} from "./product-filters";
+import {ProductsCategoryData} from "tp-kit/types";
+import {ProductCardLayout, ProductGridLayout} from "tp-kit/components";
 import {ProductFiltersResult} from "../types";
+import {filterProducts} from "../utils/filter-products";
 import Link from "next/link";
 import {AddToCartButton} from "./add-to-cart-button";
 import prisma from "../utils/prisma";

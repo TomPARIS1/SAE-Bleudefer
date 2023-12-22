@@ -1,12 +1,12 @@
 "use client";
 
 import { FC, memo, useCallback } from "react";
-import { ProductsCategoryData } from "/components-kit/types";
+import { ProductsCategoryData } from "tp-kit/types";
 import { ProductFiltersResult } from "../types";
 import { useForm } from "@mantine/form";
 import { TextInput, Checkbox } from "@mantine/core";
 import { MagnifyingGlass } from "@phosphor-icons/react";
-import { Button } from "/components-kit/button";
+import { Button } from "tp-kit/components";
 
 type Props = {
   categories: ProductsCategoryData[];

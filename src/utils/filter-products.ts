@@ -1,4 +1,4 @@
-import { ProductsCategoryData } from "/components-kit/types";
+import { ProductsCategoryData } from "tp-kit/types";
 import { ProductFiltersResult } from "../types";
 
 /**

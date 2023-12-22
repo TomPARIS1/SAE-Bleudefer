@@ -1,4 +1,4 @@
-import { SectionContainer } from "/components-kit/section-container";
+import { SectionContainer } from "tp-kit/components";
 import { ProductList } from "../../components/product-list";
 import { NextPageProps } from "../../types";
 import { Metadata } from "next";

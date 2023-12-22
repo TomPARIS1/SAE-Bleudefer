@@ -1,8 +1,8 @@
 "use client";
 
 import { FC, memo, useCallback, useState } from "react";
-import { Button, type ButtonProps } from "/components-kit/button";
-import { type ProductData } from "/components-kit/types";
+import { Button, type ButtonProps } from "tp-kit/components";
+import { type ProductData } from "tp-kit/types";
 import { addLine } from "../hooks/use-cart";
 import { Loader } from '@mantine/core';
 
