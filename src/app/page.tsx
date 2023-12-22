@@ -1,4 +1,3 @@
-import {PRODUCTS_CATEGORY_DATA} from "tp-kit/data";
 import {Metadata} from "next";
 import {CategoryList} from "../components/category-list";
 import Image from 'next/image';
@@ -10,8 +9,6 @@ import carousel3 from "../img/carousel/carousel3.jpg";
 import carousel4 from "../img/carousel/carousel4.jpg";
 import {Carousel} from 'antd';
 import prisma from "../utils/prisma";
-
-const categories = PRODUCTS_CATEGORY_DATA;
 
 export const metadata: Metadata = {
     title: `Page d’accueil - Bleu de fer`,

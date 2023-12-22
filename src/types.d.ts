@@ -1,4 +1,4 @@
-import { type ProductData, type ProductsCategoryData } from "tp-kit/types"
+import { type ProductData, type ProductsCategoryData } from "/components-kit/types"
 
 export type ProductFiltersResult = {
   categoriesSlugs : string[],

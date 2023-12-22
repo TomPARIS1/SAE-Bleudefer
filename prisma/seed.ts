@@ -1,5 +1,4 @@
 import { PrismaClient } from "@prisma/client";
-import { PRODUCTS_CATEGORY_DATA } from "tp-kit/data";
 
 const prisma = new PrismaClient();
 

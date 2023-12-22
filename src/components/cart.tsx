@@ -1,7 +1,8 @@
 "use client";
 
 import { FC, memo } from "react";
-import { ProductCartLine, FormattedPrice, Button } from "tp-kit/components";
+import { ProductCartLine } from "/components-kit/product-cart-line";
+import { Button } from "/components-kit/button"
 import {
   removeLine,
   updateLine,
@@ -45,7 +46,7 @@ const Cart: FC<Props> = memo(function () {
           <tr>
             <th className="text-left">Total</th>
             <td className="text-right font-bold">
-              <FormattedPrice price={computeCartTotal(lines)} />
+              {computeCartTotal(lines)} €
             </td>
           </tr>
         </tbody>

@@ -1,8 +1,8 @@
 import { create } from "zustand";
-import { type ProductData } from "tp-kit/types";
+import { type ProductData } from "/components-kit/types";
 import { type ProductLineData, type CartData } from "../types";
 import { useState } from "react";
-import { wait } from "tp-kit/utils/wait";
+import { wait } from "/components-kit/utils/wait";
 
 export const useCart = create<CartData>(() => ({
   lines: [],

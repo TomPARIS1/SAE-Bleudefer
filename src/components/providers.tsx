@@ -2,7 +2,7 @@
 
 import { NextFont } from "next/dist/compiled/@next/font";
 import { FC, ReactNode, memo } from "react";
-import { MantineCustomThemeProvider } from "tp-kit/components";
+import { MantineCustomThemeProvider } from "/components-kit/mantine-custom-theme-provider";
 
 type Props = {
   children: ReactNode,

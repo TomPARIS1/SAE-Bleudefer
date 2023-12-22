@@ -9,8 +9,8 @@ import Image from 'next/image'
 import './css/navbar.css'
 import Link from "next/link";
 import {Popover, Transition} from "@headlessui/react";
-import {MenuBar, Button} from "tp-kit/components";
-import {ShoppingBag, X} from "@phosphor-icons/react";
+import {Button} from "/components-kit/button";
+import {X} from "@phosphor-icons/react";
 import {Cart} from "./cart";
 import {CartCounter} from "./cart-counter";
 

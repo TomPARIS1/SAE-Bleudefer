@@ -1,8 +1,6 @@
 "use client";
 import {FC, memo, useMemo, useState} from "react";
-import {ProductFilters} from "./product-filters";
-import {ProductsCategoryData} from "tp-kit/types";
-import {ProductCardLayout, ProductGridLayout} from "tp-kit/components";
+import {ProductsCategoryData} from "/components-kit/types";
 import {ProductFiltersResult} from "../types";
 import {filterProducts} from "../utils/filter-products";
 import Link from "next/link";

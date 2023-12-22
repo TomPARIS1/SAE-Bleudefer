@@ -1,5 +1,5 @@
 "use client";
-import { PRODUCTS_CATEGORY_DATA } from "tp-kit/data";
+
 import {
   Button,
   ProductCardLayout,
@@ -9,7 +9,6 @@ import { addLine } from "../../hooks/use-cart";
 import { Cart } from "../../components/cart";
 import { CartCounter } from "../../components/cart-counter";
 import { AddToCartButton } from "../../components/add-to-cart-button";
-const products = PRODUCTS_CATEGORY_DATA[0].products.slice(0, 3);
 
 export default function DevCartPage() {
   console.log("rendu page");
