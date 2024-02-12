@@ -27,7 +27,7 @@ const ProductCardLayout: FC<Props> = memo(function (props) {
       <div className="overflow-hidden rounded-lg cursor-pointer">
         <Link href={productUrl}>
           <ProductImage
-            className="!w-full !h-auto"
+            className="!h-auto"
             height={300}
             width={300}
             {...props.product}
@@ -37,7 +37,7 @@ const ProductCardLayout: FC<Props> = memo(function (props) {
 
       <div className="mt-2">
         <div className="flex flex-row justify-between items-center gap-4">
-          <h3 className="tracking-tight uppercase truncate flex-1 link">
+          <h3 className="tracking-tight uppercase truncate max-w-xs flex-1 link">
             <Link href={productUrl}>{props.product.name}</Link>
           </h3>
 
