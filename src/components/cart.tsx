@@ -1,19 +1,27 @@
 "use client";
 
-import { FC, memo } from "react";
+import { FC, memo, useCallback } from "react";
 import { ProductCartLine, FormattedPrice, Button } from "tp-kit/components";
 import {
   removeLine,
   updateLine,
   computeCartTotal,
   useCart,
+  clearCart
 } from "../hooks/use-cart";
+
+import { createOrder } from "../actions/create-order";
 
 type Props = {};
 
 const Cart: FC<Props> = memo(function () {
   const lines = useCart((cart) => cart.lines);
   const wrapperClasses = "bg-white rounded-lg p-6 shadow-xl space-y-12";
+
+  const handleCreateOrder = useCallback(async () => {
+    await createOrder(useCart.getState());
+    clearCart();
+  }, []);
 
   if (lines.length === 0)
     return (
@@ -51,7 +59,7 @@ const Cart: FC<Props> = memo(function () {
         </tbody>
       </table>
 
-      <Button fullWidth variant="outline" size="lg">
+      <Button fullWidth variant="outline" size="lg"  onClick={handleCreateOrder}>
         Commander
       </Button>
     </div>

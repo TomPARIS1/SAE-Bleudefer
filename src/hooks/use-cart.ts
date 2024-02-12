@@ -76,8 +76,13 @@ export const removeLine = (productId: number) =>
     return { lines: updatedLines, count: updatedLines.length };
   });
 
+export const clearCart = () => useCart.setState({
+  lines: [],
+  count: 0
+}, true);
+
 /**
- * Calcul le total du panier 
+ * Calcule le total du panier 
  * 
  * @param lines 
  * @returns 
@@ -85,5 +90,15 @@ export const removeLine = (productId: number) =>
 export const computeCartTotal = (lines: ProductLineData[]): number => {
   if (lines.length === 0) return 0;
 
-  return lines.map((l) => l.product.price * l.qty).reduce((a, b) => a + b);
+  return lines
+    .map((l) => computeLineSubtotal(l))
+    .reduce((a, b) => a + b);
 }
+
+/**
+ * Calcule le total d'une ligne
+ * 
+ * @param lines 
+ * @returns 
+ */
+export const computeLineSubtotal = (line: ProductLineData): number => line.product.price * line.qty;
