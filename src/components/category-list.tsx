@@ -25,13 +25,15 @@ const CategoryList: FC<Props> = memo(function ({categories}) {
                 <section key={cat.id} className="relative">
                     <Link href={`/${cat.slug}`} className="link">
                         <div className="hover:scale-110 transition-all duration-500">
+
                             <Image
-                                src={menuB}
+                                src={cat.img}
                                 width={300}
                                 height={300}
                                 alt="Category Image"
                                 className="border-2 border-gray-200"
                             />
+
                             <p className="uppercase text-center absolute bottom-0 left-0 right-0 bg-black text-white p-2 opacity-70">{cat.name}</p>
                         </div>
                     </Link>

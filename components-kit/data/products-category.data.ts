@@ -4,6 +4,7 @@ export const PRODUCTS_CATEGORY_DATA: ProductsCategoryData[] = [
   {
     "id": 1,
     "name": "Les Précieux",
+    "img": "/products/menuC.jpg",
     "products": [
       {
         "name": "Cyanotype original brodé au fil doré sur papier népalais lamali",
@@ -137,6 +138,7 @@ export const PRODUCTS_CATEGORY_DATA: ProductsCategoryData[] = [
   {
     "id": 2,
     "name": "Empreintes Naturelles",
+    "img": "/products/menuD.jpg",
     "products": [
       {
         "name": "Cyanotype original sur tissu, mis en valeur dans un tambour à broderie en bambou",
@@ -189,6 +191,7 @@ export const PRODUCTS_CATEGORY_DATA: ProductsCategoryData[] = [
   {
     "id": 3,
     "name": "Rêverie Bucolique",
+    "img": "/products/menuB.jpg",
     "products": [
       {
         "name": "Cyanotype original sur papier aquarelle grain fin fabriqué en France",
@@ -430,6 +433,7 @@ export const PRODUCTS_CATEGORY_DATA: ProductsCategoryData[] = [
   {
     "id": 4,
     "name": "Personnalisés",
+    "img": "/products/menuF.jpg",
     "products": [
       {
         "name": "Cyanotype original sur papier aquarelle grain fin fabriqué en France",
