@@ -11,6 +11,7 @@ import {
 } from "../hooks/use-cart";
 
 import { createOrder } from "../actions/create-order";
+import Link from "next/link";
 
 type Props = {};
 
@@ -18,9 +19,20 @@ const Cart: FC<Props> = memo(function () {
   const lines = useCart((cart) => cart.lines);
   const wrapperClasses = "bg-white rounded-lg p-6 shadow-xl space-y-12";
 
+    const handleNavigateToPayment = () => {
+        return (
+            <Link href={'/shoppingCart'}>
+                <Button fullWidth variant="outline" size="lg">
+                    Commander
+                </Button>
+            </Link>
+        );
+    };
+
   const handleCreateOrder = useCallback(async () => {
     await createOrder(useCart.getState());
     clearCart();
+    return handleCreateOrder;
   }, []);
 
   if (lines.length === 0)
@@ -59,9 +71,9 @@ const Cart: FC<Props> = memo(function () {
         </tbody>
       </table>
 
-      <Button fullWidth variant="outline" size="lg"  onClick={handleCreateOrder}>
-        Commander
-      </Button>
+        <div className={wrapperClasses}>
+        {handleNavigateToPayment()}
+        </div>
     </div>
   );
 });

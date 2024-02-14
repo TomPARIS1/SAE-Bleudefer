@@ -39,7 +39,7 @@ const ProductFilters: FC<Props> = memo(function ({ categories, onChange }) {
       {/* Search field */}
       <TextInput
         id="search-input"
-        placeholder="Rechercher une boisson"
+        placeholder="Rechercher un produit"
         icon={<MagnifyingGlass size={24} weight="duotone" className="text-brand" />}
         {...form.getInputProps("search")}
       />
