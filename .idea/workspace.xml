@@ -5,19 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ea0c917a-c65f-459b-b6f1-3cf324642a06" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/prisma/seed.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/prisma.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/[categorySlug]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[categorySlug]/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/product-list.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/product-list.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp-kit/components/products/product-card-layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/tp-kit/components/products/product-card-layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp-kit/components/products/product-grid-layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/tp-kit/components/products/product-grid-layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp-kit/components/section-container.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/tp-kit/components/section-container.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp-kit/data/products-category.data.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tp-kit/data/products-category.data.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(dashboard)/dashboard/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(dashboard)/dashboard/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/add-to-cart-button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/add-to-cart-button.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/cart.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/cart.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/menu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/menu.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +33,10 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 2
+}]]></component>
   <component name="ProjectId" id="2WqxaW86OrP0mO9wDIFJBXtkJG1" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -50,6 +48,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
     "last_opened_file_path": "C:/Users/ss269359/Desktop/SAE_Bleudefer/tp-kit/components/products",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
@@ -57,7 +56,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "ts.external.directory.path": "C:\\Users\\ss269359\\Desktop\\SAE_Bleudefer\\node_modules\\typescript\\lib",
+    "ts.external.directory.path": "C:\\Users\\tp082218\\Downloads\\SAE_Bleudefer\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -93,6 +92,7 @@
       <workItem from="1699731024492" duration="4449000" />
       <workItem from="1702384696138" duration="2161000" />
       <workItem from="1702451543942" duration="6371000" />
+      <workItem from="1708077014129" duration="2291000" />
     </task>
     <servers />
   </component>

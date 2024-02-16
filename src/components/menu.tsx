@@ -81,16 +81,6 @@ const Menu: FC<Props> = memo(function () {
                             </>
                         )}
                     </Popover>
-                    <button type="submit">
-                        <Link href="/connexion">
-                            <Image
-                                src={user}
-                                width={25}
-                                height={25}
-                                alt="Logo utilisateur"
-                            />
-                        </Link>
-                    </button>
                 </form>
             </div>
 

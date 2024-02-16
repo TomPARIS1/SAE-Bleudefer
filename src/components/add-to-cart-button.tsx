@@ -20,7 +20,7 @@ const AddToCartButton: FC<Props> = memo(function ({ product, variant = 'ghost', 
 
   return (
     <Button variant={"outline"} fullWidth={fullWidth} onClick={handleAddToCart} disabled={isLoading} className="flex justify-center items-center gap-2">
-      Ajouter au panier {isLoading && <Loader className="stroke-brand" size={18} />}
+      Ajouter au panier {isLoading && <Loader color="black" size={18} />}
     </Button>
   );
 });
