@@ -2,6 +2,10 @@
 //
 // import React, { useState, useEffect } from "react";
 //
+// type Props = {
+//     cartItems: string;
+// };
+//
 // export default function ShoppingCartPage({ cartItems: initialCartItems }) {
 //   const [cartItems, setCartItems] = useState<Product[]>(initialCartItems);
 //   const [total, setTotal] = useState<number>(
