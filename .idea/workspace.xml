@@ -6,12 +6,174 @@
   <component name="ChangeListManager">
     <list default="true" id="ea0c917a-c65f-459b-b6f1-3cf324642a06" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components-kit/data/products-category.data.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components-kit/product-card-layout.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components-kit/product-grid-layout.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components-kit/section-container.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components-kit/types.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/products/menuB.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/products/menuB.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/products/menuC.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/products/menuC.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/products/menuD.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/products/menuD.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/actions/create-order.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/create-order.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/(dashboard)/dashboard/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(dashboard)/dashboard/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/add-to-cart-button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/add-to-cart-button.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/shoppingCart/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/shoppingCart/page.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/cart.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/cart.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/dashboard-menu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dashboard-menu.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/footer.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/menu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/menu.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/bande.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/bande.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/carousel/carousel1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/carousel/carousel1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/menuB.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/menuB.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/menuC.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/menuC.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/menuD.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/menuD.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/.storybook/assets/zod-translated.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/.storybook/assets/zod-untranslated.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/.storybook/build/162.1d309d0f.iframe.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/.storybook/build/238.7e925423.iframe.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/.storybook/build/253.1456b33a.iframe.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/.storybook/build/291.6e931480.iframe.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/.storybook/build/316.b81dbd7b.iframe.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/.storybook/build/316.b81dbd7b.iframe.bundle.js.LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/.storybook/build/328.87f6c52e.iframe.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/.storybook/build/51.69cf8fc8.iframe.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/.storybook/build/518.d41754a5.iframe.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/.storybook/build/741.0a45a484.iframe.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/.storybook/build/744.832dcb6a.iframe.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/.storybook/build/760.9eb92cf1.iframe.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/.storybook/build/77.805c1463.iframe.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/.storybook/build/77.805c1463.iframe.bundle.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/.storybook/build/790.e86c2dbd.iframe.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/.storybook/build/790.e86c2dbd.iframe.bundle.js.LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/.storybook/build/790.e86c2dbd.iframe.bundle.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/.storybook/build/84.cc803243.iframe.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/.storybook/build/84.cc803243.iframe.bundle.js.LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/.storybook/build/84.cc803243.iframe.bundle.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/.storybook/build/862.cd8ecfec.iframe.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/.storybook/build/894.69da2ada.iframe.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/.storybook/build/components-breadcrumbs-stories.41e14d99.iframe.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/.storybook/build/components-button-stories.723a5352.iframe.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/.storybook/build/components-card-stories.62024dad.iframe.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/.storybook/build/components-data-display-formatted-date-stories.c2e9d2a4.iframe.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/.storybook/build/components-data-display-formatted-price-stories.9811b9c6.iframe.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/.storybook/build/components-footer-stories.707c6f47.iframe.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/.storybook/build/components-heading-stories.912c3c2a.iframe.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/.storybook/build/components-menu-bar-stories.3cb8a0b3.iframe.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/.storybook/build/components-notice-message-stories.8f32cb20.iframe.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/.storybook/build/components-orders-order-details-layout-stories.db86cc8a.iframe.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/.storybook/build/components-orders-order-status-stories.95eae7d3.iframe.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/.storybook/build/components-orders-order-table-layout-stories.83fd70bf.iframe.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/.storybook/build/components-products-product-card-layout-stories.5fb1aab6.iframe.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/.storybook/build/components-products-product-card-line-stories.ccda2075.iframe.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/.storybook/build/components-products-product-grid-layout-stories.659db6d9.iframe.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/.storybook/build/components-products-product-rating-stories.2e104f65.iframe.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/.storybook/build/components-providers-zod-i18n-provider-mdx.cc9d620e.iframe.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/.storybook/build/components-providers-zod-i18n-provider-mdx.cc9d620e.iframe.bundle.js.LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/.storybook/build/components-section-container-stories.ceedb4eb.iframe.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/.storybook/build/favicon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/.storybook/build/iframe.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/.storybook/build/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/.storybook/build/index.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/.storybook/build/main.75ec2d7d.iframe.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/.storybook/build/project.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/.storybook/build/runtime~main.7728f25b.iframe.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/.storybook/build/sb-addons/essentials-actions-2/manager-bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/.storybook/build/sb-addons/essentials-actions-2/manager-bundle.js.LEGAL.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/.storybook/build/sb-addons/essentials-actions-2/manager-bundle.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/.storybook/build/sb-addons/essentials-backgrounds-3/manager-bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/.storybook/build/sb-addons/essentials-backgrounds-3/manager-bundle.js.LEGAL.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/.storybook/build/sb-addons/essentials-backgrounds-3/manager-bundle.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/.storybook/build/sb-addons/essentials-controls-1/manager-bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/.storybook/build/sb-addons/essentials-controls-1/manager-bundle.js.LEGAL.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/.storybook/build/sb-addons/essentials-controls-1/manager-bundle.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/.storybook/build/sb-addons/essentials-measure-6/manager-bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/.storybook/build/sb-addons/essentials-measure-6/manager-bundle.js.LEGAL.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/.storybook/build/sb-addons/essentials-measure-6/manager-bundle.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/.storybook/build/sb-addons/essentials-outline-7/manager-bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/.storybook/build/sb-addons/essentials-outline-7/manager-bundle.js.LEGAL.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/.storybook/build/sb-addons/essentials-outline-7/manager-bundle.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/.storybook/build/sb-addons/essentials-toolbars-5/manager-bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/.storybook/build/sb-addons/essentials-toolbars-5/manager-bundle.js.LEGAL.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/.storybook/build/sb-addons/essentials-toolbars-5/manager-bundle.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/.storybook/build/sb-addons/essentials-viewport-4/manager-bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/.storybook/build/sb-addons/essentials-viewport-4/manager-bundle.js.LEGAL.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/.storybook/build/sb-addons/essentials-viewport-4/manager-bundle.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/.storybook/build/sb-addons/interactions-9/manager-bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/.storybook/build/sb-addons/interactions-9/manager-bundle.js.LEGAL.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/.storybook/build/sb-addons/interactions-9/manager-bundle.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/.storybook/build/sb-addons/links-0/manager-bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/.storybook/build/sb-addons/links-0/manager-bundle.js.LEGAL.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/.storybook/build/sb-addons/links-0/manager-bundle.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/.storybook/build/sb-addons/onboarding-8/manager-bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/.storybook/build/sb-addons/onboarding-8/manager-bundle.js.LEGAL.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/.storybook/build/sb-addons/onboarding-8/manager-bundle.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/.storybook/build/sb-addons/styling-10/manager-bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/.storybook/build/sb-addons/styling-10/manager-bundle.js.LEGAL.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/.storybook/build/sb-addons/styling-10/manager-bundle.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/.storybook/build/sb-common-assets/fonts.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/.storybook/build/sb-common-assets/nunito-sans-bold-italic.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/.storybook/build/sb-common-assets/nunito-sans-bold.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/.storybook/build/sb-common-assets/nunito-sans-italic.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/.storybook/build/sb-common-assets/nunito-sans-regular.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/.storybook/build/sb-manager/CRUD-JM54CQ7N-IIGISR5J.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/.storybook/build/sb-manager/Communicate-ILFU4JFX-SW5LX7M2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/.storybook/build/sb-manager/Devices-OZM56PEU-YWWWQK4B.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/.storybook/build/sb-manager/Documents-DM6I5CUP-XVWSPLXW.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/.storybook/build/sb-manager/Editing-IW5SUF2G-D4JF5XQR.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/.storybook/build/sb-manager/Git-TRL4MCAM-3JEGHK27.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/.storybook/build/sb-manager/GlobalScrollAreaStyles-4LLX2B3H-DOBSPBNW.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/.storybook/build/sb-manager/Images-GZQ25EFM-UQPTU7KU.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/.storybook/build/sb-manager/Logos-EOJQS4O3-SJCQKPUS.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/.storybook/build/sb-manager/OS-6JZP22UV-DXEEOXNT.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/.storybook/build/sb-manager/OverlayScrollbars-OL4C4TVX-FNYA4OIC.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/.storybook/build/sb-manager/People-HEMUKL4R-S77ITYXB.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/.storybook/build/sb-manager/Wayfinding-AUSNPVSH-QFGOSTNT.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/.storybook/build/sb-manager/WithTooltip-YBG737T3-GLWUADFI.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/.storybook/build/sb-manager/chunk-6KNXZZZ5.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/.storybook/build/sb-manager/chunk-7KC7JBAG.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/.storybook/build/sb-manager/chunk-DP4DR4LA.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/.storybook/build/sb-manager/chunk-GBCXFRBK.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/.storybook/build/sb-manager/chunk-IFNK3PLJ.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/.storybook/build/sb-manager/chunk-JMPBYCHU.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/.storybook/build/sb-manager/chunk-JSPL73I3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/.storybook/build/sb-manager/chunk-SJD7EFYL.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/.storybook/build/sb-manager/chunk-V7GYLJLR.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/.storybook/build/sb-manager/chunk-Z4NRYNHR.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/.storybook/build/sb-manager/formatter-6736J7QO-TGL2ZGQC.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/.storybook/build/sb-manager/globals.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/.storybook/build/sb-manager/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/.storybook/build/sb-manager/runtime.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/.storybook/build/sb-manager/syntaxhighlighter-4OVWVELQ-5IZ45DZY.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/.storybook/build/sb-preview/globals.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/.storybook/build/sb-preview/runtime.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/.storybook/build/static/media/starbucks-logo-opacity-white.06cde157.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/.storybook/build/static/media/starbucks-logo.a4445a50.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/.storybook/build/static/media/zod-translated.95011f11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/.storybook/build/static/media/zod-untranslated.3affcbb7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/.storybook/build/stories.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/.storybook/main.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/.storybook/preview.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/assets/starbucks-logo-opacity-coffee-light.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/assets/starbucks-logo-opacity-white.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/assets/starbucks-logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/components/breadcrumbs.stories.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/components/breadcrumbs.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/components/footer.stories.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/components/footer.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/components/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tp-kit/components/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/components/menu-bar.stories.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/components/menu-bar.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/components/notice-message.stories.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/components/notice-message.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/components/products/product-card-layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/tp-kit/components/products/product-card-layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/components/products/product-cart-line.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/tp-kit/components/products/product-cart-line.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/components/products/product-grid-layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/tp-kit/components/products/product-grid-layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/components/section-container.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/tp-kit/components/section-container.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/data/products-category.data.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tp-kit/data/products-category.data.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tp-kit/types.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,10 +195,10 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 2
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2WqxaW86OrP0mO9wDIFJBXtkJG1" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -49,7 +211,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/ss269359/Desktop/SAE_Bleudefer/tp-kit/components/products",
+    "last_opened_file_path": "C:/Users/tp082218/Downloads/SAE_Bleudefer",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -62,12 +224,15 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\tp082218\Downloads\SAE_Bleudefer\src\app\[categorySlug]" />
+      <recent name="C:\Users\tp082218\Downloads\SAE_Bleudefer\src\app\shoppingCart" />
+      <recent name="C:\Users\tp082218\Downloads\SAE_Bleudefer\components-kit" />
       <recent name="C:\Users\ss269359\Desktop\SAE_Bleudefer\tp-kit\components\products" />
       <recent name="C:\Users\Steve\Documents\WEB\SCHOOL\SAE_Bleudefer\src\components" />
-      <recent name="C:\Users\Steve\Documents\WEB\SCHOOL\SAE_Bleudefer\src\components\Dashboard" />
-      <recent name="C:\Users\Steve\Documents\WEB\SCHOOL\SAE_Bleudefer\src\img" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\tp082218\Downloads\SAE_Bleudefer\src" />
+      <recent name="C:\Users\tp082218\Downloads\SAE_Bleudefer\src\actions" />
       <recent name="C:\Users\ss269359\Desktop\SAE_Bleudefer\src\utils" />
       <recent name="C:\Users\ss269359\Desktop\SAE_Bleudefer\tp-kit\data" />
       <recent name="C:\Users\Steve\Documents\WEB\SCHOOL\SAE_Bleudefer\src\components\Dashboard" />
@@ -92,7 +257,13 @@
       <workItem from="1699731024492" duration="4449000" />
       <workItem from="1702384696138" duration="2161000" />
       <workItem from="1702451543942" duration="6371000" />
-      <workItem from="1708077014129" duration="2291000" />
+      <workItem from="1708077014129" duration="2363000" />
+      <workItem from="1709623554999" duration="18000" />
+      <workItem from="1709883641580" duration="11130000" />
+      <workItem from="1710226896553" duration="118000" />
+      <workItem from="1710252992336" duration="6499000" />
+      <workItem from="1710316282383" duration="6586000" />
+      <workItem from="1710323425722" duration="867000" />
     </task>
     <servers />
   </component>

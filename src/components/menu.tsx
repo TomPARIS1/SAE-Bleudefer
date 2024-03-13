@@ -37,16 +37,6 @@ const Menu: FC<Props> = memo(function () {
             </div>
 
             <div className="params mr-12">
-                <form className="search-box flex" onSubmit={handleSearch}>
-                    <button type="submit">
-                        <Image
-                            src={search}
-                            width={25}
-                            height={25}
-                            alt="Logo recherche"
-                            className="mr-2"
-                        />
-                    </button>
                     <Popover as="div" className="mr-2">
                         {({ open }) => (
                             <>
@@ -81,7 +71,6 @@ const Menu: FC<Props> = memo(function () {
                             </>
                         )}
                     </Popover>
-                </form>
             </div>
 
         </nav>

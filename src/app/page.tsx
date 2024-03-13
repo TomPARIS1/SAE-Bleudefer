@@ -40,11 +40,8 @@ export default async function Home() {
                     width={0}
                     height={0}
                     alt="bande décorative"
-                    style={{width: '100%', height: '25rem', objectFit: 'cover'}}
+                    style={{width: '100%', height: '30rem'}}
                 />
-                <h1 className="text-2xl absolute text-white z-10 left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 p-4 text-center">
-                    Une promenade poétique entre Terre et Mer inspirée par la beauté de la Bretagne
-                </h1>
             </div>
 
             {/*Nouveautes*/}
@@ -56,52 +53,17 @@ export default async function Home() {
             <CategoryList categories={categories}/>
 
             {/*Slider*/}
-            <Carousel autoplay className="pt-12">
-                <div className="relative">
-                    <div className="bg-cover h-35rem">
-                        <Image
-                            src={carousel1}
-                            alt="Description de l'image 1"
-                            width={0}
-                            height={0}
-                            style={{width: '100%', height: '20rem', objectFit: 'cover'}}
-                        />
-                    </div>
+            <div className="relative">
+                <div className="bg-cover h-35rem pt-12">
+                    <Image
+                        src={carousel1}
+                        alt="Description de l'image 1"
+                        width={0}
+                        height={0}
+                        style={{width: '100%', height: '20rem'}}
+                    />
                 </div>
-                <div className="relative">
-                    <div className="bg-cover h-35rem">
-                        <Image
-                            src={carousel2}
-                            width={0}
-                            height={0}
-                            alt="Description de l'image 2"
-                            style={{width: '100%', height: '20rem', objectFit: 'cover'}}
-                        />
-                    </div>
-                </div>
-                <div className="relative">
-                    <div className="bg-cover h-35rem">
-                        <Image
-                            src={carousel3}
-                            width={0}
-                            height={0}
-                            alt="Description de l'image 3"
-                            style={{width: '100%', height: '20rem', objectFit: 'cover'}}
-                        />
-                    </div>
-                </div>
-                <div className="relative">
-                    <div className="bg-cover h-35rem">
-                        <Image
-                            src={carousel4}
-                            width={0}
-                            height={0}
-                            alt="Description de l'image 4"
-                            style={{width: '100%', height: '20rem', objectFit: 'cover'}}
-                        />
-                    </div>
-                </div>
-            </Carousel>
+            </div>
         </>
     );
 }

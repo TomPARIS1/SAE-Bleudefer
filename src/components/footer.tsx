@@ -16,7 +16,7 @@ export const Footer = function () {
     }
 
     return (
-        <div className="containerr px-12 py-12 bg-gray-100 mt-12">
+        <div className="containerr px-12 py-12 mt-12 bg-gray-200">
             <div className="under-container">
                 <div className="reseau">
                     <Image src={instagram} width={25} height={25} alt="Logo Instagram" className="mr-2" />
