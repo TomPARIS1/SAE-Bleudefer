@@ -20,12 +20,12 @@ export default function RootLayout({children}: {
         <html lang="fr">
             <body className={font.className}>
                 <Providers font={font}>
-                    {pathname != "/dashboard" ? <Menu/> : <span></span>}
+                    {pathname.includes("/dashboard") ? <span></span> : <Menu/> }
 
                     {children}
                 </Providers>
 
-                {pathname != "/dashboard" ? <Footer/> : <span></span>}
+                {pathname.includes("/dashboard") ? <span></span> : <Footer/> }
             </body>
         </html>
     )
