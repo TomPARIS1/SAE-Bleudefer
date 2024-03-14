@@ -68,13 +68,7 @@ const ProductList: FC<Props> = memo(function ({categories, showFilters = false})
 
                         <div className="flex flex-row justify-between pb-7">
                             <div className="flex">
-                                <label htmlFor="product-filter" className="uppercase pr-2">Filtrer par</label>
 
-                                <select name="filter" id="product-filter" className="block px-0 text-sm text-gray-500 bg-transparent border-0 border-b-2 border-gray-200 dark:text-gray-400 dark:border-gray-700 focus:outline-none focus:ring-0 focus:border-gray-200">
-                                    <option value="option1">Filtre 1</option>
-                                    <option value="option2">Filtre 2</option>
-                                    <option value="option3">Filtre 3</option>
-                                </select>
 
                             </div>
                             <p className="uppercase">{cat.products.length} produits</p>

@@ -40,19 +40,19 @@ export default async function Home() {
                     width={0}
                     height={0}
                     alt="bande décorative"
-                    style={{width: '100%', height: '30rem'}}
+                    style={{width: '100%', height: '35rem'}}
                 />
             </div>
+
+            {/*Categories*/}
+            <h1 className="text-center text-3xl mt-7">NOS COLLECTIONS</h1>
+            <CategoryList categories={categories}/>
 
             {/*Nouveautes*/}
             <h1 className="text-center text-3xl mt-7">LES NOUVEAUTÉS</h1>
             <NewProduct categories={product}/>
 
-            {/*Categories*/}
-            <h1 className="text-center text-3xl">NOS COLLECTIONS</h1>
-            <CategoryList categories={categories}/>
-
-            {/*Slider*/}
+            {/*Bande décorative*/}
             <div className="relative">
                 <div className="bg-cover h-35rem pt-12">
                     <Image

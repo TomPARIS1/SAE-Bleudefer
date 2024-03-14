@@ -104,21 +104,13 @@ export default function InstagramDashboard() {
             </div>
             {selectedPost && editMode && (
                 <div className="absolute top-0 left-0">
-                    <Box
-                        sx={(theme) => ({
-                            backgroundColor: theme.colors.gray[0],
-                            padding: theme.spacing.xl,
-                            borderRadius: theme.radius.md,
-                        })}
-                    >
-                        <h2 className="text-xl font-bold mb-2">Modifier le post</h2>
+                        <h2 className="text-xl font-bold mb-2">Ajouter un produit</h2>
                         <PostEditForm
                             post={selectedPost}
-                            description={instagramData.find(item => item.id === selectedPost.id)?.caption ?? ''}
+                            caption={instagramData.find(item => item.id === selectedPost.id)?.caption ?? ''}
                             onSubmit={handleFormSubmit}
                             onCancel={handleFormCancel}
                         />
-                    </Box>
                 </div>
             )}
         </div>
