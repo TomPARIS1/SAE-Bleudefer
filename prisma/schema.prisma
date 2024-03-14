@@ -69,3 +69,10 @@ model OrderLines {
 
   @@unique([orderId, productId])
 }
+
+model User {
+  id          Int      @id @default(autoincrement())
+  name        String
+  password    String
+  email       String    @unique
+}

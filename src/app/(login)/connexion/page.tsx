@@ -1,66 +1,68 @@
+"use client"
 
-import { NextPageProps } from "../../../types";
-import Link from "next/link";
-import logo from "src/img/logo-white.png";
-import ocean from "src/img/ocean.jpg"
-import Image from "next/image";
-
+import { useState } from "react";
+import { useRouter } from "next/navigation";
+import {SHA256 } from 'crypto-js';
+import { getUser } from "../../../actions/get-user";
 
 export default function Connexion() {
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
+    const [error, setError] = useState("");
+    const router = useRouter();
+
+    const handleLogin = async (e) => {
+        e.preventDefault();
+
+        if (!email || !password) {
+            setError("Veuillez saisir une adresse email et un mot de passe.");
+            return;
+        }
+
+        const user = await getUser(email);
+        if (!user) {
+            setError("Adresse email incorrecte.");
+            return;
+        }
+
+        const hashedPassword = SHA256(password).toString();
+        if (hashedPassword !== user.password) {
+            setError("Mot de passe incorrect.");
+            return;
+        }
+
+        router.push("/dashboard");
+    };
+
     return (
-        <div className="bg-gray-200 min-h-screen flex items-center justify-center">
-
-            <div className="bg-black bg-opacity-50 flex-row p-8 rounded-lg z-10">
-                <div className="logo col-start-2 flex justify-center invert-1">
-                    <Link href="/">
-                        <Image
-                            src={logo}
-                            width={100}
-                            height={100}
-                            alt="Logo Bleu de Fer"
-                        />
-                    </Link>
-                </div>
-
-                <h1 className="text-2xl text-white mb-4">Connexion</h1>
-
-                <form>
-                    <div className="mb-4 ">
-                        <label htmlFor="username" className="text-white">Nom d'utilisateur</label>
-                        <input
-                            type="text"
-                            id="username"
-                            className="w-full p-2 rounded border border-gray-400"
-                        />
-                    </div>
-
-                    <div className="mb-4">
-                        <label htmlFor="password" className="text-white">Mot de passe</label>
-                        <input
-                            type="password"
-                            id="password"
-                            className="w-full p-2 rounded border border-gray-400"
-                        />
-                    </div>
-
-                    <div className="flex justify-center ">
-                        <button className="bg-blue-500 flex justify-center text-white p-2 rounded hover:bg-blue-700">
-                            Se connecter
-                        </button>
-                    </div>
-                </form>
-
-                <div className="mt-4 text-white flex-row justify-center ">
-                    <div className="ml-2 flex justify-center">
-                        <p>Vous avez déjà un compte et souhaiter y accéder?</p>
-                    </div>
-
-                    <div className="ml-2 flex justify-center">
-                        <Link href="/inscription" className="underline">Créer un compte</Link>
-                    </div>
-                </div>
-            </div>
-
+        <div className="flex items-center justify-center h-screen">
+            <form
+                onSubmit={handleLogin}
+                className="flex flex-col space-y-4 bg-white p-8 rounded-lg shadow-lg"
+            >
+                <h1 className="text-2xl font-bold text-center">Connexion</h1>
+                <input
+                    type="text"
+                    placeholder="Adresse email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    className="p-2 border border-gray-300 rounded-lg"
+                />
+                <input
+                    type="password"
+                    placeholder="Mot de passe"
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
+                    className="p-2 border border-gray-300 rounded-lg"
+                />
+                {error && <p className="text-red-500">{error}</p>}
+                <button
+                    type="submit"
+                    className="bg-blue-500 text-white p-2 rounded-lg"
+                >
+                    Se connecter
+                </button>
+            </form>
         </div>
     );
 }
