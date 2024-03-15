@@ -34,7 +34,6 @@ const CategoryList: FC<Props> = memo(function ({categories}) {
                                 className="border-2 border-gray-200"
                             />
 
-                            <p className="uppercase text-center absolute bottom-0 left-0 right-0 bg-black text-white p-2 opacity-70">{cat.name}</p>
                         </div>
                     </Link>
                 </section>

@@ -4,8 +4,11 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import {SHA256 } from 'crypto-js';
 import { getUser } from "../../../actions/get-user";
+import { createCookie } from "../../../utils/session.js"
 
 export default function Connexion() {
+    var test = false;
+
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [error, setError] = useState("");
@@ -31,11 +34,14 @@ export default function Connexion() {
             return;
         }
 
+
+        createCookie('session', email, 1)
+
         router.push("/dashboard");
     };
 
     return (
-        <div className="flex items-center justify-center h-screen">
+        <div className="flex items-center justify-center h-screen bg-blue-500">
             <form
                 onSubmit={handleLogin}
                 className="flex flex-col space-y-4 bg-white p-8 rounded-lg shadow-lg"

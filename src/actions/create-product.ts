@@ -1,32 +1,39 @@
-// create-order.ts
 "use server";
 
-import { computeCartTotal, computeLineSubtotal } from "../hooks/use-cart";
 import prisma from "../utils/prisma";
-import { createServerComponentClient } from "@supabase/auth-helpers-nextjs";
-import { cookies } from "next/headers";
-import { CartData } from "../types";
-import {ProductData} from "tp-kit/types";
-import {fileLoader} from "ejs";
-import {Property} from "csstype";
-import Float = Property.Float;
+import {getTotalProduct} from "./get-total-product";
 
-export async function createProduct(name: string, desc: string, imgUrl: string, categorieId: number, price: number) {
+export async function createProduct(name: string, desc: string, imgUrl: string, category: string, price: number) {
+    let categoryId = 0;
+    let categorySlug = category.toLowerCase().replace(/\s/g, '-');
+    let nameSlug = name.replace(/\s/g, '-');
+
+    if (category == 'Les Precieux') {
+        categoryId = 1;
+    }
+    else if (category == 'Empreintes Naturelles') {
+        categoryId = 2;
+    }
+    else {
+        categoryId = 3;
+    }
+
+    const id = await getTotalProduct() + 1;
 
     try {
         const createdProduct = await prisma.product.create({
             data: {
+                id: id,
                 name: name,
-                slug: '',
-                path: '',
+                slug: nameSlug,
+                path: `${categorySlug}/${nameSlug}`,
                 desc: desc,
                 img: imgUrl,
-                categoryId: categorieId,
+                categoryId: categoryId,
                 price: price,
             }
         })
-
-        return createdProduct.id;
+        console.log(createdProduct);
     } catch (error) {
         console.error("Erreur lors de la création du produit :", error);
     }

@@ -5,13 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ea0c917a-c65f-459b-b6f1-3cf324642a06" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/actions/get-user.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prisma/schema.prisma" beforeDir="false" afterPath="$PROJECT_DIR$/prisma/schema.prisma" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/actions/create-order.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/create-order.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/actions/create-product.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/create-product.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/(login)/connexion/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(login)/connexion/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/(login)/inscription/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/dashboard/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/dashboard/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/dashboard/parametres/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/dashboard/revenus/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/dashboard/revenus/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/shoppingCart/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/shoppingCart/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/cart-counter.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/cart-counter.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/category-list.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/category-list.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/dashboard-menu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dashboard-menu.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/new-products.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/new-products.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/post-edit-form.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/post-edit-form.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tp-kit/.storybook/assets/zod-translated.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/tp-kit/.storybook/assets/zod-untranslated.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/tp-kit/.storybook/build/162.1d309d0f.iframe.bundle.js" beforeDir="false" />
@@ -153,6 +161,7 @@
       <change beforePath="$PROJECT_DIR$/tp-kit/components/products/product-card-layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/tp-kit/components/products/product-card-layout.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tp-kit/components/products/product-cart-line.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/tp-kit/components/products/product-cart-line.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tp-kit/components/products/product-grid-layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/tp-kit/components/products/product-grid-layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp-kit/components/providers/mantine-custom-theme-provider.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/tp-kit/components/providers/mantine-custom-theme-provider.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tp-kit/components/section-container.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/tp-kit/components/section-container.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tp-kit/data/products-category.data.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tp-kit/data/products-category.data.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tp-kit/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tp-kit/types.ts" afterDir="false" />
@@ -187,23 +196,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/Tom/Documents/GitHub/SAE_Bleudefer",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "ts.external.directory.path": "C:\\Users\\ss269359\\Downloads\\projetSAE\\SAE_Bleudefer\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Tom/Downloads/TP4_SiteCafe-main&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\Tom\\Documents\\GitHub\\SAE_Bleudefer\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\tp082218\Downloads\SAE_Bleudefer\src\app\[categorySlug]" />
@@ -248,6 +257,10 @@
       <workItem from="1710323425722" duration="867000" />
       <workItem from="1710359112201" duration="2975000" />
       <workItem from="1710401773777" duration="2513000" />
+      <workItem from="1710432793414" duration="8687000" />
+      <workItem from="1710441945114" duration="5775000" />
+      <workItem from="1710449517149" duration="461000" />
+      <workItem from="1710477718786" duration="3724000" />
     </task>
     <servers />
   </component>
@@ -258,6 +271,14 @@
         <option value="$PROJECT_DIR$/tailwind.config.js" />
       </list>
     </option>
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="dependencySupport" implementationName="javascript:npm:react" />
+    <option featureType="dependencySupport" implementationName="executable:docker" />
+    <option featureType="dependencySupport" implementationName="javascript:npm:tailwindcss" />
+    <option featureType="dependencySupport" implementationName="executable:kubectl" />
+    <option featureType="dependencySupport" implementationName="javascript:npm:next" />
+    <option featureType="dependencySupport" implementationName="javascript:npm:postcss" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">

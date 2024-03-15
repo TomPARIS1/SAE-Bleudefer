@@ -5,7 +5,6 @@ type Props = {
 }
 
 const CartCounter: FC<Props> = memo(function() {
-  console.log("rendu counter");
 
   const count = useCart(cart => cart.count);
   return <>{count}</>;

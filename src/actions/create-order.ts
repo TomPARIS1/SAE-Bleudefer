@@ -3,8 +3,6 @@
 
 import { computeCartTotal, computeLineSubtotal } from "../hooks/use-cart";
 import prisma from "../utils/prisma";
-import { createServerComponentClient } from "@supabase/auth-helpers-nextjs";
-import { cookies } from "next/headers";
 import { CartData } from "../types";
 
 export async function createOrder(cart: CartData) {

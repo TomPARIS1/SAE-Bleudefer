@@ -2,10 +2,12 @@
 
 import { useState, useEffect } from "react";
 import axios from "axios";
+import { useRouter } from "next/navigation";
 import { DashboardMenu } from "../../components/dashboard-menu";
 import { Box } from "@mantine/core";
 import Image from "next/image";
 import PostEditForm from "../../components/post-edit-form";
+import {checkCookie} from "../../utils/session";
 
 export default function InstagramDashboard() {
     const [instagramData, setInstagramData] = useState([]);
@@ -13,6 +15,16 @@ export default function InstagramDashboard() {
     const [postsData, setPostsData] = useState([]);
     const [selectedPost, setSelectedPost] = useState(null);
     const [editMode, setEditMode] = useState(false);
+
+    const router = useRouter();
+
+    useEffect(() => {
+        const isLoggedIn = checkCookie('session')
+
+        if (!isLoggedIn) {
+            router.push("/connexion");
+        }
+    }, []);
 
     useEffect(() => {
         const accessToken = 'IGQWRPZAFhFY1I0UzViY3JnVTdLM1loZAmZA3WjJDX3pDSVl0LTVQMnlSZAVhObEYyRk03cTNkTWtOekx4UEZAxbkVDbEhOMkxtSThIQmh6cEpsU0l5TXlVbTBpb01tSGd3b0ZAwSkpxNERSWWtfM3dhcUpOYXZAMdllpUjAZD';
@@ -60,15 +72,11 @@ export default function InstagramDashboard() {
         fetchPostsData();
     }, [postIds]);
 
+
+
     const handlePostClick = (post) => {
         setSelectedPost(post);
         setEditMode(true);
-    };
-
-    const handleFormSubmit = (formData) => {
-        // Envoyer les données du formulaire à votre backend pour sauvegarde
-        console.log("Données du formulaire soumises:", formData);
-        setEditMode(false);
     };
 
     const handleFormCancel = () => {
@@ -97,18 +105,16 @@ export default function InstagramDashboard() {
                 >
                     {postsData.map((post) => (
                         <section key={post.id} onClick={() => handlePostClick(post)}>
-                            <Image src={post.media_url} alt={'Instagram post'} width={200} height={200} />
+                            <Image src={post.media_url} alt={'Instagram post'} width={200} height={200} className="hover:scale-110 transition-all duration-500"/>
                         </section>
                     ))}
                 </Box>
             </div>
             {selectedPost && editMode && (
-                <div className="absolute top-0 left-0">
-                        <h2 className="text-xl font-bold mb-2">Ajouter un produit</h2>
+                <div className="absolute top-14 -right-2">
                         <PostEditForm
                             post={selectedPost}
                             caption={instagramData.find(item => item.id === selectedPost.id)?.caption ?? ''}
-                            onSubmit={handleFormSubmit}
                             onCancel={handleFormCancel}
                         />
                 </div>
